@@ -28,8 +28,6 @@ fun StepRangeSliderSample(navController: NavHostController){
             onValueChange = {newValue-> sliderPosition = newValue},
             valueRange = 0f..100f,
             onValueChangeFinished = {
-                // launch some business logic update with the state you hold
-                // viewModel.updateSelectedSliderValue(sliderPosition)
             },
             colors = SliderDefaults.colors(
                 thumbColor = MaterialTheme.colors.secondary,
