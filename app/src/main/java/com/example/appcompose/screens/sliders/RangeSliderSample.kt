@@ -34,11 +34,7 @@ fun RangeSliderSample(navController: NavHostController){
             valueRange = 0f..100f,
             onValueChangeFinished = {
 
-                // launch some business logic update with the state you hold
-                 //viewModel.updateSelectedSliderValue(sliderPosition)
             },
         )
     }
 }
-
-//SOME changes are done
