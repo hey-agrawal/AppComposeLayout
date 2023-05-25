@@ -25,8 +25,6 @@ fun StepsSliderSample(navController: NavHostController){
             onValueChange = { sliderPosition = it },
             valueRange = 0f..100f,
             onValueChangeFinished = {
-                // launch some business logic update with the state you hold
-                // viewModel.updateSelectedSliderValue(sliderPosition)
             },
             steps = 5,
             colors = SliderDefaults.colors(
