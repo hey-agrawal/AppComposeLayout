@@ -57,7 +57,7 @@ fun Sliders(navController: NavHostController){
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "Slider",route = Destination.SliderSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
-                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://github.com/hey-agrawal/BasicCode/blob/main/Sliders.kt") )
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "Steps Slider",route = Destination.StepsSliderSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
