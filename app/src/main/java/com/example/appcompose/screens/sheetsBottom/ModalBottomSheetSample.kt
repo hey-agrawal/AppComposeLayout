@@ -40,7 +40,6 @@ fun ModalBottomSheetSample(navController: NavHostController){
         var skipHalfExpanded by remember { mutableStateOf(false) }
         val state = rememberModalBottomSheetState(
             initialValue = ModalBottomSheetValue.Hidden,
-            //skipHalfExpanded = skipHalfExpanded        comment out
         )
         val scope = rememberCoroutineScope()
         ModalBottomSheetLayout(
