@@ -19,6 +19,7 @@ import androidx.compose.material.MaterialTheme.colors
 import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.rememberBottomSheetScaffoldState
@@ -87,13 +88,13 @@ fun BottomSheetScaffoldSample(navController: NavHostController){
                 var clickCount by remember { mutableStateOf(0) }
                 FloatingActionButton(
                     onClick = {
-                        // show snackbar as a suspend function
+
                         scope.launch {
                             scaffoldState.snackbarHostState.showSnackbar("Snackbar #${++clickCount}")
                         }
                     }
                 ) {
-                    Icon(Icons.Default.Favorite, contentDescription = "Localized description")
+                    Icon(Icons.Default.AccountBox, contentDescription = "Localized description")
                 }
             },
             floatingActionButtonPosition = FabPosition.End,
@@ -117,7 +118,6 @@ fun BottomSheetScaffoldSample(navController: NavHostController){
                         Modifier
                             .fillMaxWidth()
                             .height(50.dp)
-                           // .background(colors[index % colors.size]) Adding image colors not working
                     )
                 }
             }

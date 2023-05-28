@@ -57,7 +57,7 @@ fun SheetsBottom(navController: NavHostController) {
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "Bottom Sheet Scaffold",route = Destination.BottomSheetScaffoldSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
-                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://github.com/hey-agrawal/BasicCode/blob/main/BottomSheetScaffold.kt") )
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "Modal Bottom Sheet",route = Destination.ModalBottomSheetSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
