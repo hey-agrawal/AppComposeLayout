@@ -55,9 +55,9 @@ fun RadioButtons(navController: NavHostController){
                 Text(text = "Examples",
                     style = MaterialTheme.typography.h6)
                 Spacer(modifier = Modifier.height(8.dp))
-                CardItem2(title = "Radio Button",route = Destination.RadioButtonSample.route,navController)
+                CardItem2(title = "Radio Buttons",route = Destination.RadioButtonSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
-                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://github.com/hey-agrawal/BasicCode/blob/main/RadioButtons.kt") )
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "Radio Group Button",route = Destination.RadioGroupSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
