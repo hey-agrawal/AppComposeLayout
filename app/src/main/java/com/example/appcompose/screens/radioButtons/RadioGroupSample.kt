@@ -1,7 +1,9 @@
 package com.example.appcompose.screens.radioButtons
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -24,7 +26,6 @@ fun RadioGroupSample(navController: NavHostController){
     Column() {
         val radioOptions = listOf("Calls", "Missed", "Friends")
         val (selectedOption, onOptionSelected) = remember { mutableStateOf(radioOptions[0]) }
-        // Note that Modifier.selectableGroup() is essential to ensure correct accessibility behavior
         Column(Modifier.selectableGroup()) {
             radioOptions.forEach { text ->
                 Row(
@@ -41,7 +42,7 @@ fun RadioGroupSample(navController: NavHostController){
                 ) {
                     RadioButton(
                         selected = (text == selectedOption),
-                        onClick = null // null recommended for accessibility with screenreaders
+                        onClick = null
                     )
                     Text(
                         text = text,
