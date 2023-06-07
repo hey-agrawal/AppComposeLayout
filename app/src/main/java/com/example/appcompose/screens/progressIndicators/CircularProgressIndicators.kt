@@ -32,7 +32,6 @@ fun CircularProgressIndicators(navController: NavHostController){
             targetValue = progress,
             animationSpec = ProgressIndicatorDefaults.ProgressAnimationSpec
         )
-
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             LinearProgressIndicator(progress = animatedProgress)
             Spacer(Modifier.requiredHeight(30.dp))
