@@ -55,11 +55,11 @@ fun ProgressIndicators(navController: NavHostController){
                 Text(text = "Examples",
                     style = MaterialTheme.typography.h6)
                 Spacer(modifier = Modifier.height(8.dp))
-                CardItem2(title = "Modal Drawer Sample",route = Destination.LinearProgressIndicators.route,navController)
+                CardItem2(title = "Circular Progress Indicator",route = Destination.LinearProgressIndicators.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
                 HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
                 Spacer(modifier = Modifier.height(8.dp))
-                CardItem2(title = "Bottom Drawer Sample",route = Destination.CircularProgressIndicators.route,navController)
+                CardItem2(title = "Linear Progress Indicator",route = Destination.CircularProgressIndicators.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
                 HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
                 Spacer(modifier = Modifier.height(8.dp))
