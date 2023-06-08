@@ -61,7 +61,7 @@ fun ProgressIndicators(navController: NavHostController){
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "Linear Progress Indicator",route = Destination.CircularProgressIndicators.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
-                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://github.com/hey-agrawal/BasicCode/blob/main/LinearProgressIndicator.kt") )
                 Spacer(modifier = Modifier.height(8.dp))
             }
         }
