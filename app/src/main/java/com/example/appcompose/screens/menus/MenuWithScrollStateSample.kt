@@ -42,17 +42,17 @@ fun MenuWithScrollStateSample(navController: NavHostController){
             DropdownMenu(
                 expanded = expanded,
                 onDismissRequest = { expanded = false },
-               // scrollState = scrollState
+
             ) {
                 repeat(30) {
-                    DropdownMenuItem(onClick = { /* Handle item! */ }) {
+                    DropdownMenuItem(onClick = {}) {
                         Text("Item ${it + 1}")
                     }
                 }
             }
             LaunchedEffect(expanded) {
                 if (expanded) {
-                    // Scroll to show the bottom menu items.
+
                     scrollState.scrollTo(scrollState.maxValue)
                 }
             }

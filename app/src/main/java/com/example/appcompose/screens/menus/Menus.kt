@@ -61,7 +61,7 @@ fun Menus(navController: NavHostController){
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "Menu With Scroll State",route = Destination.MenuWithScrollStateSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
-                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://github.com/hey-agrawal/BasicCode/blob/main/MenuWithScrollState.kt") )
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "Exposed Drop Down Menu",route = Destination.ExposedDropDownMenuSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
