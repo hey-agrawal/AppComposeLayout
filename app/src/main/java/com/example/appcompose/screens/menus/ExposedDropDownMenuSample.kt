@@ -28,7 +28,7 @@ Column(horizontalAlignment = Alignment.CenterHorizontally,
     val options = listOf("Option 1", "Option 2", "Option 3", "Option 4", "Option 5")
     var expanded by remember { mutableStateOf(false) }
     var selectedOptionText by remember { mutableStateOf(options[0]) }
-    // We want to react on tap/press on TextField to show menu
+
     ExposedDropdownMenuBox(
         expanded = expanded,
         onExpandedChange = {
