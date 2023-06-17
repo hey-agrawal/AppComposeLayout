@@ -34,20 +34,20 @@ fun MenuSample(navController: NavHostController){
             .fillMaxSize()
             .wrapContentSize(Alignment.Center)) {
             IconButton(onClick = { expanded = true }) {
-                Icon(Icons.Default.MoreVert, contentDescription = "Localized description")
+                Icon(Icons.Default.MoreVert, contentDescription = "")
             }
             DropdownMenu(
                 expanded = expanded,
                 onDismissRequest = { expanded = false }
             ) {
-                DropdownMenuItem(onClick = { /* Handle refresh! */ }) {
+                DropdownMenuItem(onClick = { }) {
                     Text("Refresh")
                 }
-                DropdownMenuItem(onClick = { /* Handle settings! */ }) {
+                DropdownMenuItem(onClick = {  }) {
                     Text("Settings")
                 }
                 Divider()
-                DropdownMenuItem(onClick = { /* Handle send feedback! */ }) {
+                DropdownMenuItem(onClick = { }) {
                     Text("Send Feedback")
                 }
             }
