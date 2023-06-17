@@ -55,11 +55,11 @@ fun Menus(navController: NavHostController){
                 Text(text = "Examples",
                     style = MaterialTheme.typography.h6)
                 Spacer(modifier = Modifier.height(8.dp))
-                CardItem2(title = "Menu Sample",route = Destination.MenuSample.route,navController)
+                CardItem2(title = "Menu",route = Destination.MenuSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
                 HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
                 Spacer(modifier = Modifier.height(8.dp))
-                CardItem2(title = "Menu With Scroll State Sample",route = Destination.MenuWithScrollStateSample.route,navController)
+                CardItem2(title = "Menu With Scroll State",route = Destination.MenuWithScrollStateSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
                 HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
                 Spacer(modifier = Modifier.height(8.dp))
