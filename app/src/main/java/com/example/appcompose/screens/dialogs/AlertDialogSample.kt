@@ -24,18 +24,15 @@ fun AlertDialogSample (navController: NavHostController){
         if (openDialog.value) {
             AlertDialog(
                 onDismissRequest = {
-                    // Dismiss the dialog when the user clicks outside the dialog or on the back
-                    // button. If you want to disable that functionality, simply use an empty
-                    // onCloseRequest.
+
                     openDialog.value = false
                 },
                 title = {
-                    Text(text = "Title")
+                    Text(text = "Exit")
                 },
                 text = {
                     Text(
-                        "This area typically contains the supportive text " +
-                                "which presents the details regarding the Dialog's purpose."
+                        "Do you want to exit"
                     )
                 },
                 confirmButton = {
