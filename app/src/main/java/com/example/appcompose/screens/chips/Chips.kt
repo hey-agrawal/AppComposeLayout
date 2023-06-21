@@ -55,7 +55,7 @@ fun Chips(navController: NavHostController){
                 Text(text = "Examples",
                     style = MaterialTheme.typography.h6)
                 Spacer(modifier = Modifier.height(8.dp))
-                CardItem2(title = "Chips Sample",route = Destination.ChipSample.route,navController)
+                CardItem2(title = "Chips",route = Destination.ChipSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
                 HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
                 Spacer(modifier = Modifier.height(8.dp))
