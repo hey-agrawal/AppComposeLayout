@@ -26,17 +26,17 @@ import androidx.navigation.NavHostController
             modifier = Modifier
                 .fillMaxSize()) {
             Column {
-                // define dependent checkboxes states
+
                 val (state, onStateChange) = remember { mutableStateOf(true) }
                 val (state2, onStateChange2) = remember { mutableStateOf(true) }
 
-                // TriStateCheckbox state reflects state of dependent checkboxes
+
                 val parentState = remember(state, state2) {
                     if (state && state2) androidx.compose.ui.state.ToggleableState.On
                     else if (!state && !state2) androidx.compose.ui.state.ToggleableState.Off
                     else androidx.compose.ui.state.ToggleableState.Indeterminate
                 }
-                // click on TriStateCheckbox can set state for dependent checkboxes
+
                 val onParentClick = {
                     val s = parentState != androidx.compose.ui.state.ToggleableState.On
                     onStateChange(s)
