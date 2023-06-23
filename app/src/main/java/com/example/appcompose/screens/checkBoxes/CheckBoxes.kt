@@ -55,9 +55,9 @@ fun CheckBoxes(navController: NavHostController){
                 Text(text = "Examples",
                     style = MaterialTheme.typography.h6)
                 Spacer(modifier = Modifier.height(8.dp))
-                CardItem2(title = "Check Box Sample",route = Destination.CheckBoxesSample.route,navController)
+                CardItem2(title = "Check Box",route = Destination.CheckBoxesSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
-                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://github.com/hey-agrawal/BasicCode/blob/main/CheckBox.kt") )
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "TriState Check Box",route = Destination.TriStateCheckBoxSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
