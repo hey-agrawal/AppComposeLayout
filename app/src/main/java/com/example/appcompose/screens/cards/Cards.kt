@@ -55,9 +55,9 @@ fun Cards(navController: NavHostController){
                 Text(text = "Examples",
                     style = MaterialTheme.typography.h6)
                 Spacer(modifier = Modifier.height(8.dp))
-                CardItem2(title = "Card Sample",route = Destination.CardSample.route,navController)
+                CardItem2(title = "Card",route = Destination.CardSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
-                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://github.com/hey-agrawal/BasicCode/blob/main/Card.kt") )
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "Clickable Card",route = Destination.ClickableCardSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))

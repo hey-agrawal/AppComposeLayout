@@ -20,5 +20,4 @@ fun CardSample(navController: NavHostController){
             Text("Card Content")
         }
     }
-
 }
