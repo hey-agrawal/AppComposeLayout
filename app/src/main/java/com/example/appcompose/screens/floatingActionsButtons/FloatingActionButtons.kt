@@ -65,7 +65,7 @@ fun FloatingActionButtons(navController: NavHostController){
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "With Icon Fab",route = Destination.SimpleExtendedFabWithIcon.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
-                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://github.com/hey-agrawal/BasicCode/blob/main/FABWithIcon.kt") )
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "Fluid Extended Fab",route = Destination.FluidExtendedFab.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))

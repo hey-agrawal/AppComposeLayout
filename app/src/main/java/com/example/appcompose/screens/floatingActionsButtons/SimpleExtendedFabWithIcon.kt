@@ -8,6 +8,7 @@ import androidx.compose.material.Icon
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -20,8 +21,8 @@ fun SimpleExtendedFabWithIcon(navController: NavHostController){
         modifier = Modifier
             .fillMaxSize()) {
         ExtendedFloatingActionButton(
-            icon = { Icon(Icons.Filled.Favorite, contentDescription = null) },
-            text = { Text("ADD TO BASKET") },
+            icon = { Icon(Icons.Filled.Menu, contentDescription = null) },
+            text = { Text("Go To Menu") },
             onClick = {}
         )
     }
