@@ -17,10 +17,8 @@ fun SimpleExtendedFabNoIcon(navController: NavHostController){
         modifier = Modifier
             .fillMaxSize()) {
         ExtendedFloatingActionButton(
-            text = { Text("EXTENDED") },
+            text = { Text("No Icon") },
             onClick = {}
         )
     }
-
-
 }
