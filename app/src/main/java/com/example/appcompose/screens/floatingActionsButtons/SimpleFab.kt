@@ -7,6 +7,7 @@ import androidx.compose.material.FloatingActionButton
 import androidx.compose.material.Icon
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -19,9 +20,8 @@ fun SimpleFab(navController: NavHostController){
         verticalArrangement = Arrangement.Center,
         modifier = Modifier
             .fillMaxSize()) {
-        FloatingActionButton(onClick = { /*do something*/ }) {
-            Icon(Icons.Filled.Favorite, contentDescription = "Localized description")
+        FloatingActionButton(onClick = { /*Action*/ }) {
+            Icon(Icons.Filled.Menu, contentDescription = "")
         }
     }
-
 }
