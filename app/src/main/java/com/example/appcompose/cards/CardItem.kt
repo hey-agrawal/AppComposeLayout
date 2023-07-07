@@ -1,4 +1,4 @@
-package com.example.appcompose
+package com.example.appcompose.cards
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
