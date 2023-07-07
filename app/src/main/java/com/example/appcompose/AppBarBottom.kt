@@ -17,7 +17,7 @@ import androidx.navigation.NavHostController
 fun Screen2(navController:NavHostController) {
     Scaffold(
         topBar = {
-            TopAppBar { Text(text = "Screen 2") }
+            TopAppBar { Text(text = "App Bar Bottom") }
         }
 
     ) {
@@ -31,7 +31,7 @@ fun Screen2(navController:NavHostController) {
         ) {
 
 
-            Text(text = "Screen 2")
+            Text(text = "App Bar Bottom")
             Button(onClick = {navController.navigate(Destination.ScreenThird.route)}) {
                 Text(text = "Next")
             }

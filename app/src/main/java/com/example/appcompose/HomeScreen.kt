@@ -42,7 +42,7 @@ fun HomeScreen(navController: NavHostController) {
                     .fillMaxSize()
                     .padding(16.dp)
             ) {
-                CardItem("Screen2", Icons.Default.AccountBox, Destination.ScreenSecond.route,navController)
+                CardItem("App Bar Bottom", Icons.Default.AccountBox, Destination.AppBarBottom.route,navController)
                 Spacer(modifier = Modifier.height(16.dp))
                 CardItem("Screen3", Icons.Default.AccountBox, Destination.ScreenThird.route,navController
                 )

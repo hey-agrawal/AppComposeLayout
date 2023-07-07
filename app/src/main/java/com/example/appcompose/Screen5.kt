@@ -31,7 +31,7 @@ fun Screen5(navController: NavHostController) {
 
 
             Text(text = "Screen 5")
-            Button(onClick = {navController.navigate(Destination.ScreenFirst.route)}) {
+            Button(onClick = {navController.navigate(Destination.HomeScreen.route)}) {
                 Text(text = "Next")
             }
             Button(onClick = {navController.navigateUp()}) {
