@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.example.appcompose.cards.CardItem
+import com.example.appcompose.navigation.Destination
 
 //import androidx.compose.foundation.layout.Column
 //import androidx.compose.foundation.layout.Spacer

@@ -1,4 +1,4 @@
-package com.example.appcompose.appBar
+package com.example.appcompose.screens.appBar
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -17,10 +17,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
+import com.example.appcompose.navigation.Destination
+import com.example.appcompose.cards.CardItem2
 
 
 @Composable
-fun Screen2(navController:NavHostController) {
+fun AppBarBottom(navController:NavHostController) {
     Scaffold(
 
         topBar = {
@@ -52,9 +54,11 @@ fun Screen2(navController:NavHostController) {
                     Text(text = "A bottom app bar displays navigation and key actions at the bottom of the mobile screen ",
                         style = MaterialTheme.typography.h6
                         )
+                Spacer(modifier = Modifier.height(8.dp))
                     Text(text = "Example",
                         style = MaterialTheme.typography.h6)
-
+                Spacer(modifier = Modifier.height(8.dp))
+                    CardItem2(title = "Simple Bottom App Bar", route = Destination.SimpleBottomAppBar.route, navController )
 
             }
 

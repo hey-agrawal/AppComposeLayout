@@ -24,13 +24,12 @@ fun CardItem2(title: String,route: String, navController: NavController) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .height(120.dp)
+            .height(60.dp)
             .clickable { navController.navigate(route) },
         elevation = 8.dp
     ) {
         Column(
             modifier = Modifier
-
                 .padding(16.dp)
                 .fillMaxSize(),
             verticalArrangement =  Arrangement.Center,
