@@ -24,6 +24,11 @@ import com.example.appcompose.screens.buttons.ButtonWithIconSample
 import com.example.appcompose.screens.buttons.Buttons
 import com.example.appcompose.screens.buttons.OutlinedButtonSample
 import com.example.appcompose.screens.buttons.TextButtonsSample
+import com.example.appcompose.screens.floatingActionsButtons.FloatingActionButtons
+import com.example.appcompose.screens.floatingActionsButtons.FluidExtendedFab
+import com.example.appcompose.screens.floatingActionsButtons.SimpleExtendedFabNoIcon
+import com.example.appcompose.screens.floatingActionsButtons.SimpleExtendedFabWithIcon
+import com.example.appcompose.screens.floatingActionsButtons.SimpleFab
 import com.example.appcompose.screens.navigationRail.CompactNavigationRailSimple
 import com.example.appcompose.screens.navigationRail.NavigationRail
 import com.example.appcompose.screens.navigationRail.NavigationRailBottomAlignSimple
@@ -72,6 +77,14 @@ fun ComposeNavigation(){
         composable(Destination.ButtonWithIconSample.route){ ButtonWithIconSample(navController) }
         composable(Destination.OutlinedButtonSample.route){ OutlinedButtonSample(navController) }
         composable(Destination.TextButtonsSample.route){ TextButtonsSample(navController) }
+
+
+        //Floating Actions Buttons
+        composable(Destination.FloatingActionButtons.route){ FloatingActionButtons(navController)}
+        composable(Destination.FluidExtendedFab.route){ FluidExtendedFab(navController)}
+        composable(Destination.SimpleExtendedFabNoIcon.route) { SimpleExtendedFabNoIcon(navController)}
+        composable(Destination.SimpleExtendedFabWithIcon.route){ SimpleExtendedFabWithIcon(navController)}
+        composable(Destination.SimpleFab.route){ SimpleFab(navController)}
 
 
 

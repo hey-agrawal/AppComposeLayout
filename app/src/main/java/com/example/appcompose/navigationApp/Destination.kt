@@ -42,6 +42,15 @@ sealed class Destination(val route: String) {
     object TextButtonsSample : Destination("TextButtonSample")
 
 
+   //Floating Action Button
+   object FloatingActionButtons : Destination("FloatingActionButtons")
+   object FluidExtendedFab : Destination("FluidExtendedFab")
+   object SimpleExtendedFabNoIcon : Destination("SimpleExtendedFabNoIcon")
+   object SimpleExtendedFabWithIcon : Destination("SimpleExtendedFabIcon")
+   object SimpleFab : Destination("SimpleFab")
+
+
+
     object ScreenThird : Destination("ScreenThird")
     object ScreenFourth : Destination("ScreenFourth")
     object ScreenFive : Destination("ScreenFive")
