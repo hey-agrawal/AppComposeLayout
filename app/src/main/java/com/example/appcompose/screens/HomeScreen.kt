@@ -45,7 +45,6 @@ fun HomeScreen(navController: NavHostController) {
                     Spacer(modifier = Modifier.height(16.dp))
                     CardItem("Navigation Rail", Icons.Default.AccountBox, Destination.NavigationRail.route,navController)
                     Spacer(modifier = Modifier.height(16.dp))
-                    Spacer(modifier = Modifier.height(16.dp))
                     CardItem("Buttons", Icons.Default.AccountBox, Destination.Buttons.route,navController)
                     Spacer(modifier = Modifier.height(16.dp))
                     CardItem("Floating Action Button", Icons.Default.AccountBox, Destination.FloatingActionButtons.route,navController)
