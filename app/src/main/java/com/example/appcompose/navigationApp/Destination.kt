@@ -34,6 +34,14 @@ sealed class Destination(val route: String) {
     object NavigationRailWithOnlySelectedLabels : Destination("NavigationRailWithOnlySelectedLabels")
 
 
+    //Buttons
+    object Buttons : Destination("Buttons")
+    object ButtonSample : Destination("ButtonSample")
+    object ButtonWithIconSample : Destination("ButtonWithIconSample")
+    object OutlinedButtonSample : Destination("OutlinedButtonSampled")
+    object TextButtonsSample : Destination("TextButtonSample")
+
+
     object ScreenThird : Destination("ScreenThird")
     object ScreenFourth : Destination("ScreenFourth")
     object ScreenFive : Destination("ScreenFive")

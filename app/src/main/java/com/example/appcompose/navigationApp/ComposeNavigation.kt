@@ -19,6 +19,11 @@ import com.example.appcompose.screens.badge.BottomNavigationItemWithBadge
 import com.example.appcompose.screens.bottomNavigating.BottomNavigation
 import com.example.appcompose.screens.bottomNavigating.BottomNavigationSample
 import com.example.appcompose.screens.bottomNavigating.BottomNavigationWithOnlySelectedLabelsSamples
+import com.example.appcompose.screens.buttons.ButtonSample
+import com.example.appcompose.screens.buttons.ButtonWithIconSample
+import com.example.appcompose.screens.buttons.Buttons
+import com.example.appcompose.screens.buttons.OutlinedButtonSample
+import com.example.appcompose.screens.buttons.TextButtonsSample
 import com.example.appcompose.screens.navigationRail.CompactNavigationRailSimple
 import com.example.appcompose.screens.navigationRail.NavigationRail
 import com.example.appcompose.screens.navigationRail.NavigationRailBottomAlignSimple
@@ -60,6 +65,14 @@ fun ComposeNavigation(){
         composable(Destination.NavigationRailBottomAlignSimple.route){ NavigationRailBottomAlignSimple(navController)}
         composable(Destination.NavigationRailSimple.route){ NavigationRailSample(navController)}
         composable(Destination.NavigationRailWithOnlySelectedLabels.route){ NavigationRailWithOnlySelectedLabels(navController)}
+
+        // Buttons
+        composable(Destination.Buttons.route){ Buttons(navController)}
+        composable(Destination.ButtonSample.route){ ButtonSample(navController) }
+        composable(Destination.ButtonWithIconSample.route){ ButtonWithIconSample(navController) }
+        composable(Destination.OutlinedButtonSample.route){ OutlinedButtonSample(navController) }
+        composable(Destination.TextButtonsSample.route){ TextButtonsSample(navController) }
+
 
 
 
