@@ -27,6 +27,9 @@ import com.example.appcompose.screens.buttons.TextButtonsSample
 import com.example.appcompose.screens.cards.CardSample
 import com.example.appcompose.screens.cards.Cards
 import com.example.appcompose.screens.cards.ClickableCardSample
+import com.example.appcompose.screens.checkBoxes.CheckBoxes
+import com.example.appcompose.screens.checkBoxes.CheckBoxesSample
+import com.example.appcompose.screens.checkBoxes.TriStateCheckBoxSample
 import com.example.appcompose.screens.floatingActionsButtons.FloatingActionButtons
 import com.example.appcompose.screens.floatingActionsButtons.FluidExtendedFab
 import com.example.appcompose.screens.floatingActionsButtons.SimpleExtendedFabNoIcon
@@ -94,6 +97,12 @@ fun ComposeNavigation(){
         composable(Destination.Cards.route){ Cards(navController )}
         composable(Destination.CardSample.route){ CardSample(navController)}
         composable(Destination.ClickableCardSample.route){ ClickableCardSample(navController)}
+
+
+        //Check boxes
+        composable(Destination.CheckBoxes.route){ CheckBoxes(navController)}
+        composable(Destination.CheckBoxesSample.route){ CheckBoxesSample(navController)}
+        composable(Destination.TriStateCheckBoxSample.route){ TriStateCheckBoxSample(navController)}
 
 
 

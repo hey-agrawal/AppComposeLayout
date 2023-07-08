@@ -55,6 +55,10 @@ sealed class Destination(val route: String) {
     object CardSample : Destination("CardSample")
     object ClickableCardSample : Destination("ClickableCardSample")
 
+    //Check Boxes
+    object CheckBoxes : Destination("Checkboxes")
+    object CheckBoxesSample : Destination("CheckBoxesSample")
+    object TriStateCheckBoxSample : Destination ("TriStateCheckBoxSample")
 
 
     object ScreenThird : Destination("ScreenThird")
