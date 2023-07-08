@@ -47,6 +47,8 @@ fun HomeScreen(navController: NavHostController) {
             ) {
                 CardItem("App Bar Bottom", Icons.Default.AccountBox, Destination.AppBarBottom.route,navController)
                 Spacer(modifier = Modifier.height(16.dp))
+                CardItem("App Bar top", Icons.Default.AccountBox, Destination.AppBarTop.route,navController)
+                Spacer(modifier = Modifier.height(16.dp))
                 CardItem("Screen3", Icons.Default.AccountBox, Destination.ScreenThird.route,navController
                 )
                 Spacer(modifier = Modifier.height(16.dp))

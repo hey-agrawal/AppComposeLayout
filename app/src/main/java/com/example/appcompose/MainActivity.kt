@@ -8,7 +8,9 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavHostController
 import com.example.appcompose.screens.appBar.SimpleBottomAppBar
+import com.example.appcompose.screens.appBar.SimpleTopAppBar
 
 import com.example.appcompose.ui.theme.AppComposeTheme
 
@@ -24,7 +26,6 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
 
-                // SimpleBottomAppBar()
                  MyApp()
                 }
         }
