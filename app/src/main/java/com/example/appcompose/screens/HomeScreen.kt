@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
@@ -26,25 +27,27 @@ fun HomeScreen(navController: NavHostController) {
             )
         },
         content = {
-            Column(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(16.dp)
-            ) {
-                CardItem("App Bar Bottom", Icons.Default.AccountBox, Destination.AppBarBottom.route,navController)
-                Spacer(modifier = Modifier.height(16.dp))
-                CardItem("App Bar top", Icons.Default.AccountBox, Destination.AppBarTop.route,navController)
-                Spacer(modifier = Modifier.height(16.dp))
-                CardItem("BackDrop", Icons.Default.AccountBox, Destination.BackDrop.route,navController)
-                Spacer(modifier = Modifier.height(16.dp))
-                CardItem("Badge", Icons.Default.AccountBox, Destination.Badge.route,navController)
-                Spacer(modifier = Modifier.height(16.dp))
-                CardItem("Screen3", Icons.Default.AccountBox, Destination.ScreenThird.route,navController
-                )
-                Spacer(modifier = Modifier.height(16.dp))
-                CardItem("Screen4", Icons.Default.AccountBox, Destination.ScreenFourth.route,navController)
-            }
-        }
+            LazyColumn(modifier = Modifier.fillMaxSize().padding(16.dp)){
+                item {   Column(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(16.dp)
+                ) {
+                    CardItem("App Bar Bottom", Icons.Default.AccountBox, Destination.AppBarBottom.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("App Bar top", Icons.Default.AccountBox, Destination.AppBarTop.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("BackDrop", Icons.Default.AccountBox, Destination.BackDrop.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Badge", Icons.Default.AccountBox, Destination.Badge.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Screen3", Icons.Default.AccountBox, Destination.ScreenThird.route,navController
+                    )
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Screen4", Icons.Default.AccountBox, Destination.ScreenFourth.route,navController)
+                } }
+
+        }}
     )
-}
+        }
 
