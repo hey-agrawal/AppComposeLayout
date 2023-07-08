@@ -1,4 +1,4 @@
-package com.example.appcompose.navigation
+package com.example.appcompose.navigationApp
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
@@ -19,6 +19,11 @@ import com.example.appcompose.screens.badge.BottomNavigationItemWithBadge
 import com.example.appcompose.screens.bottomNavigating.BottomNavigation
 import com.example.appcompose.screens.bottomNavigating.BottomNavigationSample
 import com.example.appcompose.screens.bottomNavigating.BottomNavigationWithOnlySelectedLabelsSamples
+import com.example.appcompose.screens.navigationRail.CompactNavigationRailSimple
+import com.example.appcompose.screens.navigationRail.NavigationRail
+import com.example.appcompose.screens.navigationRail.NavigationRailBottomAlignSimple
+import com.example.appcompose.screens.navigationRail.NavigationRailSample
+import com.example.appcompose.screens.navigationRail.NavigationRailWithOnlySelectedLabels
 
 @Composable
 fun ComposeNavigation(){
@@ -43,13 +48,22 @@ fun ComposeNavigation(){
         composable(Destination.BottomNavigationItemWithBadge.route) { BottomNavigationItemWithBadge(navController)}
 
 
-        //navigating
+        //bottom navigating
         composable(Destination.BottomNavigation.route){ BottomNavigation(navController)}
         composable(Destination.BottomNavigationSample.route){ BottomNavigationSample(navController)}
         composable(Destination.BottomNavigationWithOnlySelectedLabelsSamples.route){ BottomNavigationWithOnlySelectedLabelsSamples(navController)}
 
 
-        //normal navigation
+        //Navigation Rail
+        composable(Destination.CompactNavigationRailSimple.route){ CompactNavigationRailSimple(navController)}
+        composable(Destination.NavigationRail.route){ NavigationRail(navController)}
+        composable(Destination.NavigationRailBottomAlignSimple.route){ NavigationRailBottomAlignSimple(navController)}
+        composable(Destination.NavigationRailSimple.route){ NavigationRailSample(navController)}
+        composable(Destination.NavigationRailWithOnlySelectedLabels.route){ NavigationRailWithOnlySelectedLabels(navController)}
+
+
+
+        //old app normal navigation
         composable(Destination.ScreenThird.route) { Screen3(navController) }
         composable(Destination.ScreenFourth.route) { Screen4(navController) }
         composable(Destination.ScreenFive.route) { Screen5(navController) }

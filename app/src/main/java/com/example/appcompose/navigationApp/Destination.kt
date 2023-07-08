@@ -1,4 +1,4 @@
-package com.example.appcompose.navigation
+package com.example.appcompose.navigationApp
 
 sealed class Destination(val route: String) {
 
@@ -21,11 +21,17 @@ sealed class Destination(val route: String) {
    object BottomNavigationItemWithBadge : Destination("BottomNavigationItemWithBadge")
 
 
-    //Navigating
+    //Bottom Navigating
     object BottomNavigation : Destination("BottomNavigation")
     object BottomNavigationSample : Destination("BottomNavigationSample")
     object BottomNavigationWithOnlySelectedLabelsSamples : Destination("BottomNavigationWithOnlySelectedLabelsSamples")
 
+    //Navigation Rail
+    object NavigationRail : Destination("NavigationRail")
+    object CompactNavigationRailSimple : Destination("CompactNavigationRailSimple")
+    object NavigationRailBottomAlignSimple : Destination("NavigationRailBottomAlignSimple")
+    object NavigationRailSimple : Destination("NavigationRailSimple")
+    object NavigationRailWithOnlySelectedLabels : Destination("NavigationRailWithOnlySelectedLabels")
 
 
     object ScreenThird : Destination("ScreenThird")

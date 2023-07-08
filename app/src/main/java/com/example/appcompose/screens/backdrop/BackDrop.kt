@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.example.appcompose.cards.CardItem2
 import com.example.appcompose.hyperlink.HyperlinkText
-import com.example.appcompose.navigation.Destination
+import com.example.appcompose.navigationApp.Destination
 
 @Composable
 fun BackDrop(navController: NavHostController) {

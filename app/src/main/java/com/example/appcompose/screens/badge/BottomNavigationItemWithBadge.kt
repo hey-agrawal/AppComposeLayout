@@ -21,7 +21,6 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.example.appcompose.hyperlink.HyperlinkText
-import com.example.appcompose.navigation.Destination
 
 @Composable
 fun BottomNavigationItemWithBadge(navController: NavHostController) {

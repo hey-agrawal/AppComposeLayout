@@ -8,7 +8,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.example.appcompose.navigation.ComposeNavigation
+import com.example.appcompose.navigationApp.ComposeNavigation
 
 import com.example.appcompose.ui.theme.AppComposeTheme
 

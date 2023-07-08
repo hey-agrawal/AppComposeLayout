@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
-import com.example.appcompose.navigation.Destination
+import com.example.appcompose.navigationApp.Destination
 
 @Composable
 fun Screen4(navController: NavHostController) {

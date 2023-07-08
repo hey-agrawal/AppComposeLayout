@@ -15,7 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.example.appcompose.cards.CardItem
-import com.example.appcompose.navigation.Destination
+import com.example.appcompose.navigationApp.Destination
 
 
 @Composable
@@ -43,9 +43,11 @@ fun HomeScreen(navController: NavHostController) {
                     Spacer(modifier = Modifier.height(16.dp))
                     CardItem("Bottom Navigation", Icons.Default.AccountBox, Destination.BottomNavigation.route,navController)
                     Spacer(modifier = Modifier.height(16.dp))
-                    CardItem("Screen3", Icons.Default.AccountBox, Destination.ScreenThird.route,navController)
+                    CardItem("Navigation Rail", Icons.Default.AccountBox, Destination.NavigationRail.route,navController)
                     Spacer(modifier = Modifier.height(16.dp))
-                    CardItem("Screen4", Icons.Default.AccountBox, Destination.ScreenFourth.route,navController)
+                    //CardItem("Screen3", Icons.Default.AccountBox, Destination.ScreenThird.route,navController)
+                    //Spacer(modifier = Modifier.height(16.dp))
+                    //CardItem("Screen4", Icons.Default.AccountBox, Destination.ScreenFourth.route,navController)
                 } }
 
         }}
