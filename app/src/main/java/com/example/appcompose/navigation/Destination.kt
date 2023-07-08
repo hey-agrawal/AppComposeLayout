@@ -21,6 +21,11 @@ sealed class Destination(val route: String) {
    object BottomNavigationItemWithBadge : Destination("BottomNavigationItemWithBadge")
 
 
+    //Navigating
+    object BottomNavigation : Destination("BottomNavigation")
+    object BottomNavigationSample : Destination("BottomNavigationSample")
+    object BottomNavigationWithOnlySelectedLabelsSamples : Destination("BottomNavigationWithOnlySelectedLabelsSamples")
+
 
 
     object ScreenThird : Destination("ScreenThird")

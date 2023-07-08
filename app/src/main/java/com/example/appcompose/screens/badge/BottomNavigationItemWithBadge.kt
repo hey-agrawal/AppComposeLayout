@@ -24,7 +24,7 @@ import com.example.appcompose.hyperlink.HyperlinkText
 import com.example.appcompose.navigation.Destination
 
 @Composable
-fun BottomNavigationItemWithBadge(navHostController: NavHostController) {
+fun BottomNavigationItemWithBadge(navController: NavHostController) {
 Column(horizontalAlignment = Alignment.CenterHorizontally,
     verticalArrangement = Arrangement.Center,
     modifier = Modifier

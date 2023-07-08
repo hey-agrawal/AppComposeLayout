@@ -20,7 +20,7 @@ import androidx.navigation.NavHostController
 import com.example.appcompose.hyperlink.HyperlinkText
 
 @Composable
-fun SimpleTopAppBar(navHostController: NavHostController) {
+fun SimpleTopAppBar(navController: NavHostController) {
     Column(horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
         modifier = Modifier

@@ -30,7 +30,7 @@ import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
-fun BackDropScaffoldSample(navHostController: NavHostController){
+fun BackDropScaffoldSample(navController: NavHostController){
 
     val scope = rememberCoroutineScope()
     val selection = remember { mutableStateOf(1) }
