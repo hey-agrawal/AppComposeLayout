@@ -43,6 +43,10 @@ import com.example.appcompose.screens.floatingActionsButtons.FluidExtendedFab
 import com.example.appcompose.screens.floatingActionsButtons.SimpleExtendedFabNoIcon
 import com.example.appcompose.screens.floatingActionsButtons.SimpleExtendedFabWithIcon
 import com.example.appcompose.screens.floatingActionsButtons.SimpleFab
+import com.example.appcompose.screens.menus.ExposedDropDownMenuSample
+import com.example.appcompose.screens.menus.MenuSample
+import com.example.appcompose.screens.menus.MenuWithScrollStateSample
+import com.example.appcompose.screens.menus.Menus
 import com.example.appcompose.screens.navigationRail.CompactNavigationRailSimple
 import com.example.appcompose.screens.navigationRail.NavigationRail
 import com.example.appcompose.screens.navigationRail.NavigationRailBottomAlignSimple
@@ -121,11 +125,17 @@ fun ComposeNavigation(){
         composable(Destination.ChipsGroupSingleLineSample.route){ ChipsGroupSingleLineSample(navController)}
         composable(Destination.OutlinedChipWithIconSample.route){ OutlinedChipWithIconSample(navController)}
 
-        //
+        //dialog
         composable(Destination.AlertDialogSample.route){ AlertDialogSample(navController)}
         composable(Destination.CustomAlertDialogSample.route){ CustomAlertDialogSample(navController)}
         composable(Destination.Dialogs.route){ Dialogs(navController)}
 
+
+        //Menus
+        composable(Destination.ExposedDropDownMenuSample.route){ ExposedDropDownMenuSample(navController)}
+        composable(Destination.Menus.route){ Menus(navController)}
+        composable(Destination.MenuSample.route){ MenuSample(navController)}
+        composable(Destination.MenuWithScrollStateSample.route){ MenuWithScrollStateSample(navController)}
 
 
         //old app normal navigation

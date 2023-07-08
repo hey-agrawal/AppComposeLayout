@@ -75,6 +75,15 @@ sealed class Destination(val route: String) {
    object CustomAlertDialogSample : Destination("CustomAlertDialogSample")
    object Dialogs : Destination("Dialogs")
 
+    //Menus
+    object ExposedDropDownMenuSample : Destination("ExposedDropDownMenuSample")
+    object Menus : Destination("Menus")
+
+    object MenuSample : Destination("MenuSample")
+
+    object MenuWithScrollStateSample : Destination("MenuWithScrollStateSample")
+
+
 
     object ScreenThird : Destination("ScreenThird")
     object ScreenFourth : Destination("ScreenFourth")
