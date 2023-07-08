@@ -50,6 +50,12 @@ sealed class Destination(val route: String) {
    object SimpleFab : Destination("SimpleFab")
 
 
+    //Cards
+    object Cards : Destination("Cards")
+    object CardSample : Destination("CardSample")
+    object ClickableCardSample : Destination("ClickableCardSample")
+
+
 
     object ScreenThird : Destination("ScreenThird")
     object ScreenFourth : Destination("ScreenFourth")

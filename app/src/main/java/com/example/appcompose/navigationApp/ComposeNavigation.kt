@@ -24,6 +24,9 @@ import com.example.appcompose.screens.buttons.ButtonWithIconSample
 import com.example.appcompose.screens.buttons.Buttons
 import com.example.appcompose.screens.buttons.OutlinedButtonSample
 import com.example.appcompose.screens.buttons.TextButtonsSample
+import com.example.appcompose.screens.cards.CardSample
+import com.example.appcompose.screens.cards.Cards
+import com.example.appcompose.screens.cards.ClickableCardSample
 import com.example.appcompose.screens.floatingActionsButtons.FloatingActionButtons
 import com.example.appcompose.screens.floatingActionsButtons.FluidExtendedFab
 import com.example.appcompose.screens.floatingActionsButtons.SimpleExtendedFabNoIcon
@@ -85,6 +88,12 @@ fun ComposeNavigation(){
         composable(Destination.SimpleExtendedFabNoIcon.route) { SimpleExtendedFabNoIcon(navController)}
         composable(Destination.SimpleExtendedFabWithIcon.route){ SimpleExtendedFabWithIcon(navController)}
         composable(Destination.SimpleFab.route){ SimpleFab(navController)}
+
+
+        //Cards
+        composable(Destination.Cards.route){ Cards(navController )}
+        composable(Destination.CardSample.route){ CardSample(navController)}
+        composable(Destination.ClickableCardSample.route){ ClickableCardSample(navController)}
 
 
 
