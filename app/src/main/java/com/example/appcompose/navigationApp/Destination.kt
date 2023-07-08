@@ -61,6 +61,21 @@ sealed class Destination(val route: String) {
     object TriStateCheckBoxSample : Destination ("TriStateCheckBoxSample")
 
 
+
+    //Chips
+    object ChipGroupReflowSample : Destination("ChipGroupReflowSample")
+    object Chips : Destination("Chips")
+    object ChipSample : Destination("ChipSample")
+    object ChipsGroupSingleLineSample : Destination("ChipsGroupSingleLineSample")
+    object OutlinedChipWithIconSample : Destination("OutlinedChipWithIconSample")
+
+
+   //Dialogs
+   object AlertDialogSample : Destination("AlertDialogSample")
+   object CustomAlertDialogSample : Destination("CustomAlertDialogSample")
+   object Dialogs : Destination("Dialogs")
+
+
     object ScreenThird : Destination("ScreenThird")
     object ScreenFourth : Destination("ScreenFourth")
     object ScreenFive : Destination("ScreenFive")

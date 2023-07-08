@@ -25,7 +25,7 @@ fun AppBarTop(navController: NavHostController) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(text = "Screen 2") }
+                title = { Text(text = "Top App Bar") }
             )
         },
         content = {

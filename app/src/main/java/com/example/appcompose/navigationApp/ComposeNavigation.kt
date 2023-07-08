@@ -30,6 +30,14 @@ import com.example.appcompose.screens.cards.ClickableCardSample
 import com.example.appcompose.screens.checkBoxes.CheckBoxes
 import com.example.appcompose.screens.checkBoxes.CheckBoxesSample
 import com.example.appcompose.screens.checkBoxes.TriStateCheckBoxSample
+import com.example.appcompose.screens.chips.ChipGroupReflowSample
+import com.example.appcompose.screens.chips.Chips
+import com.example.appcompose.screens.chips.ChipsGroupSingleLineSample
+import com.example.appcompose.screens.chips.ChipsSample
+import com.example.appcompose.screens.chips.OutlinedChipWithIconSample
+import com.example.appcompose.screens.dialogs.AlertDialogSample
+import com.example.appcompose.screens.dialogs.CustomAlertDialogSample
+import com.example.appcompose.screens.dialogs.Dialogs
 import com.example.appcompose.screens.floatingActionsButtons.FloatingActionButtons
 import com.example.appcompose.screens.floatingActionsButtons.FluidExtendedFab
 import com.example.appcompose.screens.floatingActionsButtons.SimpleExtendedFabNoIcon
@@ -104,6 +112,19 @@ fun ComposeNavigation(){
         composable(Destination.CheckBoxesSample.route){ CheckBoxesSample(navController)}
         composable(Destination.TriStateCheckBoxSample.route){ TriStateCheckBoxSample(navController)}
 
+
+
+        //Chips
+        composable(Destination.ChipGroupReflowSample.route){ ChipGroupReflowSample(navController)}
+        composable(Destination.Chips.route){ Chips(navController)}
+        composable(Destination.ChipSample.route){ ChipsSample(navController)}
+        composable(Destination.ChipsGroupSingleLineSample.route){ ChipsGroupSingleLineSample(navController)}
+        composable(Destination.OutlinedChipWithIconSample.route){ OutlinedChipWithIconSample(navController)}
+
+        //
+        composable(Destination.AlertDialogSample.route){ AlertDialogSample(navController)}
+        composable(Destination.CustomAlertDialogSample.route){ CustomAlertDialogSample(navController)}
+        composable(Destination.Dialogs.route){ Dialogs(navController)}
 
 
 

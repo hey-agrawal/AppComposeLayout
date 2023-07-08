@@ -27,7 +27,7 @@ fun AppBarBottom(navController:NavHostController) {
 
         topBar = {
             TopAppBar(
-                title = { Text(text = "Screen 2") }
+                title = { Text(text = "Bottom App Bar") }
             )
         },
         content = {
