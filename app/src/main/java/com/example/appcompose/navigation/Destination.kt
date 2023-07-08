@@ -15,6 +15,14 @@ sealed class Destination(val route: String) {
     object BackDrop : Destination("BackDrop")
     object BackDropScaffoldSample : Destination("BackDropScaffoldSample")
 
+
+   //Badge
+   object Badge : Destination("Badge")
+   object BottomNavigationItemWithBadge : Destination("BottomNavigationItemWithBadge")
+
+
+
+
     object ScreenThird : Destination("ScreenThird")
     object ScreenFourth : Destination("ScreenFourth")
     object ScreenFive : Destination("ScreenFive")

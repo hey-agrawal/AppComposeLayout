@@ -12,6 +12,8 @@ import com.example.appcompose.screens.appBar.AppBarTop
 import com.example.appcompose.screens.appBar.SimpleTopAppBar
 import com.example.appcompose.screens.backdrop.BackDrop
 import com.example.appcompose.screens.backdrop.BackDropScaffoldSample
+import com.example.appcompose.screens.badge.Badge
+import com.example.appcompose.screens.badge.BottomNavigationItemWithBadge
 
 @Composable
 fun ComposeNavigation(){
@@ -30,6 +32,10 @@ fun ComposeNavigation(){
         //backdrop Scaffold
         composable(Destination.BackDrop.route){ BackDrop(navController)}
         composable(Destination.BackDropScaffoldSample.route){ BackDropScaffoldSample(navController) }
+
+        //Badge
+        composable(Destination.Badge.route){ Badge(navController)}
+        composable(Destination.BottomNavigationItemWithBadge.route) { BottomNavigationItemWithBadge(navController)}
 
 
         //normal navigation
