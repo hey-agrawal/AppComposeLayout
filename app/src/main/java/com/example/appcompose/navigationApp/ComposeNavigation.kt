@@ -55,6 +55,9 @@ import com.example.appcompose.screens.navigationRail.NavigationRail
 import com.example.appcompose.screens.navigationRail.NavigationRailBottomAlignSimple
 import com.example.appcompose.screens.navigationRail.NavigationRailSample
 import com.example.appcompose.screens.navigationRail.NavigationRailWithOnlySelectedLabels
+import com.example.appcompose.screens.progressIndicators.CircularProgressIndicators
+import com.example.appcompose.screens.progressIndicators.LinearProgressIndicators
+import com.example.appcompose.screens.progressIndicators.ProgressIndicators
 
 @Composable
 fun ComposeNavigation(){
@@ -144,6 +147,11 @@ fun ComposeNavigation(){
         composable(Destination.BottomDrawerSample.route){ BottomDrawerSample(navController )}
         composable(Destination.ModalDrawerSample.route){ ModalDrawerSample(navController)}
         composable(Destination.NavigationDrawer.route){ NavigationDrawer(navController)}
+
+        //Progress Indicators
+        composable(Destination.CircularProgressIndicators.route){ CircularProgressIndicators(navController)}
+        composable(Destination.LinearProgressIndicators.route){ LinearProgressIndicators(navController)}
+        composable(Destination.ProgressIndicators.route){ ProgressIndicators(navController)}
 
 
         //old app normal navigation

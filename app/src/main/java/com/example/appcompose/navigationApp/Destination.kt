@@ -88,6 +88,11 @@ sealed class Destination(val route: String) {
     object ModalDrawerSample : Destination("ModalDrawerSample")
     object NavigationDrawer : Destination("NavigationDrawer")
 
+    //Progress Indicators
+    object CircularProgressIndicators : Destination("CircularProgressIndicators")
+    object LinearProgressIndicators : Destination("LinearProgressIndicators")
+    object ProgressIndicators : Destination("ProgressIndicators")
+
 
 
     object ScreenThird : Destination("ScreenThird")
