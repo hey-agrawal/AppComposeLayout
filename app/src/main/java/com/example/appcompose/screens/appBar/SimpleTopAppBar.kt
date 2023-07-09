@@ -2,9 +2,7 @@ package com.example.appcompose.screens.appBar
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.height
 import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
 import androidx.compose.material.Text
@@ -15,9 +13,8 @@ import androidx.compose.material.icons.filled.Menu
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
-import com.example.appcompose.hyperlink.HyperlinkText
+
 
 @Composable
 fun SimpleTopAppBar(navController: NavHostController) {
@@ -33,16 +30,13 @@ fun SimpleTopAppBar(navController: NavHostController) {
                 }
             },
             actions = {
-
                 IconButton(onClick = { /* doSomething() */ }) {
-                    Icon(Icons.Filled.Favorite, contentDescription = "Localized description")
+                    Icon(Icons.Filled.Favorite, contentDescription = "")
                 }
                 IconButton(onClick = { /* doSomething() */ }) {
-                    Icon(Icons.Filled.Favorite, contentDescription = "Localized description")
+                    Icon(Icons.Filled.Favorite, contentDescription = "")
                 }
             }
         )
-
     }
-
 }

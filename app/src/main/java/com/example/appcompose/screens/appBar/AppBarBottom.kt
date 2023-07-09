@@ -62,7 +62,7 @@ fun AppBarBottom(navController:NavHostController) {
                 Spacer(modifier = Modifier.height(8.dp))
                     CardItem2(title = "Simple Bottom App Bar", route = Destination.SimpleBottomAppBar.route, navController )
                 Spacer(modifier = Modifier.height(8.dp))
-                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://github.com/hey-agrawal/BasicCode/blob/main/SimpleBottomAppBar.kt") )
 
             }
 

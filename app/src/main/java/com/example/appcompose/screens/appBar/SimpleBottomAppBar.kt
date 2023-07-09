@@ -33,14 +33,14 @@ fun SimpleBottomAppBar(navController: NavHostController) {
         BottomAppBar() {
             Row(modifier = Modifier.fillMaxWidth()) {
                 IconButton(onClick = { }) {
-                    Icon(Icons.Filled.Menu, contentDescription = "Localized description")
+                    Icon(Icons.Filled.Menu, contentDescription = "")
                 }
             Spacer(Modifier.weight(1f, true))
             IconButton(onClick = { }) {
-                Icon(Icons.Filled.Favorite, contentDescription = "Localized description")
+                Icon(Icons.Filled.Favorite, contentDescription = "")
             }
             IconButton(onClick = { }) {
-                Icon(Icons.Filled.Favorite, contentDescription = "Localized description")
+                Icon(Icons.Filled.Favorite, contentDescription = "")
             }
         }
     }
