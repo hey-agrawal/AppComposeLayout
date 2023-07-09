@@ -1,6 +1,7 @@
 package com.example.appcompose.screens
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -32,6 +33,7 @@ fun HomeScreen(navController: NavHostController) {
                 title = { Text(text = "Home") }
             )
         },
+        backgroundColor = Color(0xFF437244),
         content = {
             LazyColumn(modifier = Modifier
                 .fillMaxSize()
@@ -87,7 +89,6 @@ fun HomeScreen(navController: NavHostController) {
                     Spacer(modifier = Modifier.height(16.dp))
                 } }
 
-        }}
-    )
-        }
-
+                }}
+        )
+    }
