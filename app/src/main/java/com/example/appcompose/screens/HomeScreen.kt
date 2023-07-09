@@ -1,5 +1,6 @@
 package com.example.appcompose.screens
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,6 +15,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
@@ -41,36 +43,48 @@ fun HomeScreen(navController: NavHostController) {
                 ) {
                     CardItem("App Bar Bottom",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) },Destination.AppBarBottom.route,navController)
                     Spacer(modifier = Modifier.height(16.dp))
-//                    CardItem("App Bar top", Icons.Default.AccountBox, Destination.AppBarTop.route,navController)
-//                    Spacer(modifier = Modifier.height(16.dp))
-//                    CardItem("BackDrop", Icons.Default.AccountBox, Destination.BackDrop.route,navController)
-//                    Spacer(modifier = Modifier.height(16.dp))
-//                    CardItem("Badge", Icons.Default.AccountBox, Destination.Badge.route,navController)
-//                    Spacer(modifier = Modifier.height(16.dp))
-//                    CardItem("Bottom Navigation", Icons.Default.AccountBox, Destination.BottomNavigation.route,navController)
-//                    Spacer(modifier = Modifier.height(16.dp))
-//                    CardItem("Navigation Rail", Icons.Default.AccountBox, Destination.NavigationRail.route,navController)
-//                    Spacer(modifier = Modifier.height(16.dp))
-//                    CardItem("Buttons", Icons.Default.AccountBox, Destination.Buttons.route,navController)
-//                    Spacer(modifier = Modifier.height(16.dp))
-//                    CardItem("Floating Action Button", Icons.Default.AccountBox, Destination.FloatingActionButtons.route,navController)
-//                    Spacer(modifier = Modifier.height(16.dp))
-//                    CardItem("Cards", Icons.Default.AccountBox,Destination.Cards.route,navController)
-//                    Spacer(modifier = Modifier.height(16.dp))
-//                    CardItem("Check Boxes", Icons.Default.AccountBox,Destination.CheckBoxes.route,navController)
-//                    Spacer(modifier = Modifier.height(16.dp))
-//                    CardItem("Chips", Icons.Default.AccountBox,Destination.Chips.route,navController)
-//                    Spacer(modifier = Modifier.height(16.dp))
-//                    CardItem("Dialog", Icons.Default.AccountBox,Destination.Dialogs.route,navController)
-//                    Spacer(modifier = Modifier.height(16.dp))
-//                    CardItem("Menu", Icons.Default.AccountBox,Destination.Menus.route,navController)
-//                    Spacer(modifier = Modifier.height(16.dp))
-
-
-
-                    //CardItem("Screen3", Icons.Default.AccountBox, Destination.ScreenThird.route,navController)
-                    //Spacer(modifier = Modifier.height(16.dp))
-                    //CardItem("Screen4", Icons.Default.AccountBox, Destination.ScreenFourth.route,navController)
+                    CardItem("App Bar top",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) }, Destination.AppBarTop.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("BackDrop",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) }, Destination.BackDrop.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Badge",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) }, Destination.Badge.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Bottom Navigation",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) }, Destination.BottomNavigation.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Navigation Rail",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) }, Destination.NavigationRail.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Buttons",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) }, Destination.Buttons.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Floating Action Button",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) }, Destination.FloatingActionButtons.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Cards",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) },Destination.Cards.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Check Boxes",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) },Destination.CheckBoxes.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Chips",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) },Destination.Chips.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Dialog",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) },Destination.Dialogs.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Menu",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) },Destination.Menus.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Navigation Drawer",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) },Destination.NavigationDrawer.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Progress Indicator",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) },Destination.ProgressIndicators.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Radio Button",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) },Destination.RadioButtons.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Sheet Bottom",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) },Destination.SheetsBottom.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Slider",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) },Destination.Sliders.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Snackbars",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) },Destination.SnackBars.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Switches",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) },Destination.Switches.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Tabs",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) },Destination.Tabs.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    CardItem("Text Field",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) },Destination.TextFields.route,navController)
+                    Spacer(modifier = Modifier.height(16.dp))
                 } }
 
         }}
