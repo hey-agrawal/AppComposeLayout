@@ -24,13 +24,11 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
 
-                 MyApp()
+                MyApp()
                 }
         }
 }
     }
-
-
     @Composable
     fun MyApp() {
         Surface(color = MaterialTheme.colors.background) {

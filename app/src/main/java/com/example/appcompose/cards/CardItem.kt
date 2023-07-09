@@ -20,7 +20,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 
 @Composable
-fun CardItem(title: String, icon: ImageVector, route: String, navController: NavController) {
+fun CardItem(title: String, icon: @Composable ()-> Unit, route: String, navController: NavController) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -36,7 +36,7 @@ fun CardItem(title: String, icon: ImageVector, route: String, navController: Nav
             verticalArrangement =  Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Icon(imageVector = icon, contentDescription = "Icon", modifier = Modifier.size(48.dp))
+            icon()
             Text(text = title, style = MaterialTheme.typography.h6, modifier = Modifier.padding(top = 8.dp))
         }
     }
