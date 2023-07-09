@@ -104,6 +104,12 @@ sealed class Destination(val route: String) {
     object SheetsBottom : Destination("SheetsBottom")
 
 
+   // Sliders
+   object RangeSliderSample : Destination("RangeSliderSample")
+   object Sliders : Destination("Sliders")
+   object SliderSample : Destination("SliderSample")
+   object StepRangeSliderSample : Destination("StepRangeSliderSample")
+   object StepsSliderSample : Destination("StepsSliderSample")
 
 
 

@@ -65,6 +65,10 @@ import com.example.appcompose.screens.radioButtons.RadioGroupSample
 import com.example.appcompose.screens.sheetsBottom.BottomSheetScaffoldSample
 import com.example.appcompose.screens.sheetsBottom.ModalBottomSheetSample
 import com.example.appcompose.screens.sheetsBottom.SheetsBottom
+import com.example.appcompose.screens.sliders.RangeSliderSample
+import com.example.appcompose.screens.sliders.SliderSample
+import com.example.appcompose.screens.sliders.Sliders
+import com.example.appcompose.screens.sliders.StepRangeSliderSample
 
 @Composable
 fun ComposeNavigation(){
@@ -170,6 +174,14 @@ fun ComposeNavigation(){
         composable(Destination.BottomSheetScaffoldSample.route){ BottomSheetScaffoldSample(navController) }
         composable(Destination.ModalBottomSheetSample.route){ ModalBottomSheetSample(navController) }
         composable(Destination.SheetsBottom.route){ SheetsBottom(navController) }
+
+
+        //Sliders
+        composable(Destination.RangeSliderSample.route){ RangeSliderSample(navController)}
+        composable(Destination.Sliders.route){ Sliders(navController )}
+        composable(Destination.SliderSample.route){ SliderSample(navController)}
+        composable(Destination.StepRangeSliderSample.route){ StepRangeSliderSample(navController)}
+        composable(Destination.StepsSliderSample.route){ StepRangeSliderSample(navController )}
 
 
 
