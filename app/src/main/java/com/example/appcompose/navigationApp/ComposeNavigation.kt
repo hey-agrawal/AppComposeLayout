@@ -75,6 +75,28 @@ import com.example.appcompose.screens.snackbar.ScaffoldWithSimpleSnackbar
 import com.example.appcompose.screens.snackbar.SnackBars
 import com.example.appcompose.screens.switches.SwitchSample
 import com.example.appcompose.screens.switches.Switches
+import com.example.appcompose.screens.tabs.FancyIndicatorsContainerTabs
+import com.example.appcompose.screens.tabs.FancyIndicatorsTabs
+import com.example.appcompose.screens.tabs.FancyTabs
+import com.example.appcompose.screens.tabs.IconTabs
+import com.example.appcompose.screens.tabs.LeadingIconTabs
+import com.example.appcompose.screens.tabs.ScrollingFancyIndicatorsContainerTabs
+import com.example.appcompose.screens.tabs.ScrollingTextTabs
+import com.example.appcompose.screens.tabs.Tabs
+import com.example.appcompose.screens.tabs.TextAndIconTab
+import com.example.appcompose.screens.tabs.TextTabs
+import com.example.appcompose.screens.textFields.OutlinedTextFieldSample
+import com.example.appcompose.screens.textFields.PasswordTextField
+import com.example.appcompose.screens.textFields.SimpleOutlinedTextFieldSample
+import com.example.appcompose.screens.textFields.SimpleTextFieldSample
+import com.example.appcompose.screens.textFields.TextArea
+import com.example.appcompose.screens.textFields.TextFieldSample
+import com.example.appcompose.screens.textFields.TextFieldWithErrorState
+import com.example.appcompose.screens.textFields.TextFieldWithHelperMessage
+import com.example.appcompose.screens.textFields.TextFieldWithHideKeyboardOnImeAction
+import com.example.appcompose.screens.textFields.TextFieldWithIcons
+import com.example.appcompose.screens.textFields.TextFieldWithPlaceHolder
+import com.example.appcompose.screens.textFields.TextFields
 
 @Composable
 fun ComposeNavigation(){
@@ -199,6 +221,34 @@ fun ComposeNavigation(){
         //Switches
         composable(Destination.Switches.route){ Switches(navController )}
         composable(Destination.SwitchSample.route){ SwitchSample(navController)}
+
+        //tabs
+        composable(Destination.FancyIndicatorsContainerTabs.route){ FancyIndicatorsContainerTabs(navController)}
+        composable(Destination.FancyIndicatorsTabs.route){ FancyIndicatorsTabs(navController)}
+        composable(Destination.FancyTabs.route){ FancyTabs(navController)}
+        composable(Destination.IconTabs.route){ IconTabs(navController)}
+        composable(Destination.LeadingIconTabs.route){ LeadingIconTabs(navController)}
+        composable(Destination.ScrollingFancyIndicatorsContainerTabs.route){ ScrollingFancyIndicatorsContainerTabs(navController)}
+        composable(Destination.ScrollingTextTabs.route){ ScrollingTextTabs(navController)}
+        composable(Destination.Tabs.route){ Tabs(navController)}
+        composable(Destination.TextAndIconTab.route){ TextAndIconTab(navController)}
+        composable(Destination.TextTabs.route){ TextTabs(navController)}
+
+
+        //Text Fields
+        composable(Destination.OutlinedTextFieldSample.route){ OutlinedTextFieldSample(navController)}
+        composable(Destination.PasswordTextField.route){ PasswordTextField(navController)}
+        composable(Destination.SimpleOutlinedTextFieldSample.route){ SimpleOutlinedTextFieldSample(navController)}
+        composable(Destination.SimpleTextFieldSample.route){ SimpleTextFieldSample(navController)}
+        composable(Destination.TextArea.route){ TextArea(navController)}
+        composable(Destination.TextFields.route){ TextFields(navController)}
+        composable(Destination.TextFieldSample.route){ TextFieldSample(navController)}
+        composable(Destination.TextFieldWithErrorState.route){ TextFieldWithErrorState(navController)}
+        composable(Destination.TextFieldWithHelperMessage.route){ TextFieldWithHelperMessage(navController)}
+        composable(Destination.TextFieldWithHideKeyboardOnImeAction.route){ TextFieldWithHideKeyboardOnImeAction(navController)}
+        composable(Destination.TextFieldWithIcon.route){ TextFieldWithIcons(navController)}
+        composable(Destination.TextFieldWithPlaceHolder.route){ TextFieldWithPlaceHolder(navController)}
+
 
 
         //old app normal navigation

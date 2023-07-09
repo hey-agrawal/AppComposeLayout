@@ -123,6 +123,38 @@ sealed class Destination(val route: String) {
     object Switches : Destination("Switches")
     object SwitchSample : Destination("SwitchSample")
 
+    //Tabs
+    object FancyIndicatorsContainerTabs : Destination("FancyIndicatorsContainerTabs")
+    object FancyIndicatorsTabs : Destination("FancyIndicatorsTabs")
+    object FancyTabs : Destination("FancyTabs")
+    object IconTabs : Destination("IconTabs")
+    object LeadingIconTabs : Destination("LeadingIconTabs")
+    object ScrollingFancyIndicatorsContainerTabs: Destination("ScrollingFancyIndicatorsContainerTabs")
+    object ScrollingTextTabs : Destination("ScrollingTextTabs")
+    object Tabs : Destination("Tabs")
+    object TextAndIconTab : Destination("TextAndIconTab")
+    object TextTabs : Destination("TextTabs")
+
+
+    //TextFields
+    object OutlinedTextFieldSample : Destination("OutlinedTextFieldSample")
+    object PasswordTextField : Destination("PasswordTextField")
+    object SimpleOutlinedTextFieldSample : Destination("SimpleOutlinedTextFieldSample")
+    object SimpleTextFieldSample : Destination("SimpleTextFieldSample")
+    object TextArea : Destination("TextArea")
+    object TextFields : Destination("TextFields")
+    object TextFieldSample : Destination("TextFieldSample")
+    object TextFieldWithErrorState : Destination("TextFieldWithErrorState")
+    object TextFieldWithHelperMessage : Destination("TextFieldWithHelperMessage")
+    object TextFieldWithHideKeyboardOnImeAction : Destination("TextFieldWithHideKeyboardOnImeAction")
+    object TextFieldWithIcon : Destination("TextFieldWithIcon")
+    object TextFieldWithPlaceHolder : Destination("TextFieldWithPlaceHolder")
+
+
+
+
+
+
 
 
 
