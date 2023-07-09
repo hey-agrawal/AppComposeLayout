@@ -83,6 +83,11 @@ sealed class Destination(val route: String) {
 
     object MenuWithScrollStateSample : Destination("MenuWithScrollStateSample")
 
+    //Navigation Drawer
+    object BottomDrawerSample : Destination("BottomDrawerSample")
+    object ModalDrawerSample : Destination("ModalDrawerSample")
+    object NavigationDrawer : Destination("NavigationDrawer")
+
 
 
     object ScreenThird : Destination("ScreenThird")

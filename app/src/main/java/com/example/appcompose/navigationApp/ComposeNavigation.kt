@@ -47,6 +47,9 @@ import com.example.appcompose.screens.menus.ExposedDropDownMenuSample
 import com.example.appcompose.screens.menus.MenuSample
 import com.example.appcompose.screens.menus.MenuWithScrollStateSample
 import com.example.appcompose.screens.menus.Menus
+import com.example.appcompose.screens.navigationDrawer.BottomDrawerSample
+import com.example.appcompose.screens.navigationDrawer.ModalDrawerSample
+import com.example.appcompose.screens.navigationDrawer.NavigationDrawer
 import com.example.appcompose.screens.navigationRail.CompactNavigationRailSimple
 import com.example.appcompose.screens.navigationRail.NavigationRail
 import com.example.appcompose.screens.navigationRail.NavigationRailBottomAlignSimple
@@ -136,6 +139,11 @@ fun ComposeNavigation(){
         composable(Destination.Menus.route){ Menus(navController)}
         composable(Destination.MenuSample.route){ MenuSample(navController)}
         composable(Destination.MenuWithScrollStateSample.route){ MenuWithScrollStateSample(navController)}
+
+        //Navigation Drawer
+        composable(Destination.BottomDrawerSample.route){ BottomDrawerSample(navController )}
+        composable(Destination.ModalDrawerSample.route){ ModalDrawerSample(navController)}
+        composable(Destination.NavigationDrawer.route){ NavigationDrawer(navController)}
 
 
         //old app normal navigation
