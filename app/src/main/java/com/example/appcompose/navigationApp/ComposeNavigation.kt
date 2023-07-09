@@ -69,6 +69,10 @@ import com.example.appcompose.screens.sliders.RangeSliderSample
 import com.example.appcompose.screens.sliders.SliderSample
 import com.example.appcompose.screens.sliders.Sliders
 import com.example.appcompose.screens.sliders.StepRangeSliderSample
+import com.example.appcompose.screens.snackbar.ScaffoldWithCoroutinesSnackbar
+import com.example.appcompose.screens.snackbar.ScaffoldWithCustomSnackBar
+import com.example.appcompose.screens.snackbar.ScaffoldWithSimpleSnackbar
+import com.example.appcompose.screens.snackbar.SnackBars
 
 @Composable
 fun ComposeNavigation(){
@@ -183,6 +187,11 @@ fun ComposeNavigation(){
         composable(Destination.StepRangeSliderSample.route){ StepRangeSliderSample(navController)}
         composable(Destination.StepsSliderSample.route){ StepRangeSliderSample(navController )}
 
+        //Snack bar
+        composable(Destination.ScaffoldWithCustomSnackbar.route){ ScaffoldWithCustomSnackBar(navController)}
+        composable(Destination.ScaffoldWithCoroutinesSnackbar.route){ ScaffoldWithCoroutinesSnackbar(navController)}
+        composable(Destination.ScaffoldWithSimpleSnackbar.route){ ScaffoldWithSimpleSnackbar(navController)}
+        composable(Destination.SnackBars.route){ SnackBars(navController )}
 
 
         //old app normal navigation

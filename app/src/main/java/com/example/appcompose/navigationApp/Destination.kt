@@ -112,6 +112,13 @@ sealed class Destination(val route: String) {
    object StepsSliderSample : Destination("StepsSliderSample")
 
 
+    //SnackBar
+    object ScaffoldWithCustomSnackbar : Destination("ScaffoldWithCustomSnackbar")
+    object ScaffoldWithCoroutinesSnackbar : Destination("ScaffoldWithCoroutinesSnackbar")
+    object ScaffoldWithSimpleSnackbar : Destination("ScaffoldWithSimpleSnackbar")
+    object SnackBars : Destination("SnackBars")
+
+
 
 
     object ScreenThird : Destination("ScreenThird")
