@@ -1,6 +1,7 @@
 package com.example.appcompose.cards
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -33,7 +34,14 @@ fun CardItem(title: String, icon: @Composable ()-> Unit, route: String, navContr
     ) {
         Box(  modifier = Modifier
             .background(color = Color(0xFF437244))
-            .fillMaxSize()) {
+            .fillMaxSize()
+            .border(
+                width = 1.dp,
+            color = Color.Gray,
+            shape = MaterialTheme.shapes.medium
+        )
+
+        ) {
             Column(
                 modifier = Modifier
                     .fillMaxSize(),
@@ -41,15 +49,11 @@ fun CardItem(title: String, icon: @Composable ()-> Unit, route: String, navContr
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 icon()
+                Text(text = title, style = MaterialTheme.typography.h6, modifier = Modifier.padding(top = 8.dp), color = Color.White)
             }
         }
-        Column(modifier = Modifier,
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Bottom) {
-            Text(text = title, style = MaterialTheme.typography.h6, modifier = Modifier.padding(top = 8.dp), color = Color.White)
         }
-
-        }
-
 }
+
+
 
