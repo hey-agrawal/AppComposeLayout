@@ -20,6 +20,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.example.appcompose.navigationApp.Destination
 import com.example.appcompose.cards.CardItem2
+import com.example.appcompose.hyperlink.HyperlinkText
 
 
 @Composable
@@ -60,6 +61,8 @@ fun AppBarBottom(navController:NavHostController) {
                         style = MaterialTheme.typography.h6)
                 Spacer(modifier = Modifier.height(8.dp))
                     CardItem2(title = "Simple Bottom App Bar", route = Destination.SimpleBottomAppBar.route, navController )
+                Spacer(modifier = Modifier.height(8.dp))
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
 
             }
 

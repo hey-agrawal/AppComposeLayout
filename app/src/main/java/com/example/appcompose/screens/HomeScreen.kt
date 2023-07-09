@@ -30,10 +30,11 @@ fun HomeScreen(navController: NavHostController) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(text = "Home") }
+                title = { Text(text = "Home") },
+                backgroundColor = Color(0xFF548D55)
             )
         },
-        backgroundColor = Color(0xFF437244),
+        backgroundColor = Color(0xFF1B421C),
         content = {
             LazyColumn(modifier = Modifier
                 .fillMaxSize()

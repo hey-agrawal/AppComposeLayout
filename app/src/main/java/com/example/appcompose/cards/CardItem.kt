@@ -33,7 +33,7 @@ fun CardItem(title: String, icon: @Composable ()-> Unit, route: String, navContr
         elevation = 25.dp
     ) {
         Box(  modifier = Modifier
-            .background(color = Color(0xFF437244))
+            .background(color = Color(0xFF548D55))
             .fillMaxSize()
             .border(
                 width = 1.dp,

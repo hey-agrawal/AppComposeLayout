@@ -41,8 +41,7 @@ fun BottomNavigationWithOnlySelectedLabelsSamples(navHostController: NavHostCont
                 )
             }
         }
-        Spacer(modifier = Modifier.height(8.dp))
-        HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
+
     }
 
 }

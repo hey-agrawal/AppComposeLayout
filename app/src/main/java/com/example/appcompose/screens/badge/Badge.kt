@@ -19,6 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.example.appcompose.cards.CardItem2
+import com.example.appcompose.hyperlink.HyperlinkText
 import com.example.appcompose.navigationApp.Destination
 
 @Composable
@@ -58,6 +59,8 @@ fun Badge(navController: NavHostController) {
                     style = MaterialTheme.typography.h6)
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "Back Drop Scaffold Sample ", route = Destination.BottomNavigationItemWithBadge.route, navController )
+                Spacer(modifier = Modifier.height(8.dp))
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
             }
 
         }

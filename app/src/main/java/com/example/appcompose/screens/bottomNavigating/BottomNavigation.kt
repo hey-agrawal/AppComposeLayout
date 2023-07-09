@@ -19,6 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.example.appcompose.cards.CardItem2
+import com.example.appcompose.hyperlink.HyperlinkText
 import com.example.appcompose.navigationApp.Destination
 @Composable
 fun BottomNavigation(navController: NavHostController){
@@ -55,7 +56,11 @@ fun BottomNavigation(navController: NavHostController){
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "Bottom Navigation Sample",route = Destination.BottomNavigationSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
+                Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "BottomNavigationWithOnlySelectedLabelsSamples",route = Destination.BottomNavigationWithOnlySelectedLabelsSamples.route,navController)
+                Spacer(modifier = Modifier.height(8.dp))
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
             }
         }
     )
