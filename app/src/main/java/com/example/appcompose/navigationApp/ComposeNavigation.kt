@@ -1,5 +1,6 @@
 package com.example.appcompose.navigationApp
 
+import android.provider.MediaStore.Audio.Radio
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -58,6 +59,12 @@ import com.example.appcompose.screens.navigationRail.NavigationRailWithOnlySelec
 import com.example.appcompose.screens.progressIndicators.CircularProgressIndicators
 import com.example.appcompose.screens.progressIndicators.LinearProgressIndicators
 import com.example.appcompose.screens.progressIndicators.ProgressIndicators
+import com.example.appcompose.screens.radioButtons.RadioButtons
+import com.example.appcompose.screens.radioButtons.RadioButtonsSample
+import com.example.appcompose.screens.radioButtons.RadioGroupSample
+import com.example.appcompose.screens.sheetsBottom.BottomSheetScaffoldSample
+import com.example.appcompose.screens.sheetsBottom.ModalBottomSheetSample
+import com.example.appcompose.screens.sheetsBottom.SheetsBottom
 
 @Composable
 fun ComposeNavigation(){
@@ -152,6 +159,18 @@ fun ComposeNavigation(){
         composable(Destination.CircularProgressIndicators.route){ CircularProgressIndicators(navController)}
         composable(Destination.LinearProgressIndicators.route){ LinearProgressIndicators(navController)}
         composable(Destination.ProgressIndicators.route){ ProgressIndicators(navController)}
+
+        //Radio Buttons
+        composable(Destination.RadioButtons.route){ RadioButtons(navController) }
+        composable(Destination.RadioButtonSample.route){ RadioButtonsSample(navController) }
+        composable(Destination.RadioGroupSample.route){ RadioGroupSample(navController) }
+
+        //Bottom Sheet
+
+        composable(Destination.BottomSheetScaffoldSample.route){ BottomSheetScaffoldSample(navController) }
+        composable(Destination.ModalBottomSheetSample.route){ ModalBottomSheetSample(navController) }
+        composable(Destination.SheetsBottom.route){ SheetsBottom(navController) }
+
 
 
         //old app normal navigation

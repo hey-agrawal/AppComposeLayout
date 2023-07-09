@@ -93,6 +93,19 @@ sealed class Destination(val route: String) {
     object LinearProgressIndicators : Destination("LinearProgressIndicators")
     object ProgressIndicators : Destination("ProgressIndicators")
 
+    //Radio Buttons
+    object RadioButtons : Destination("RadioButtons")
+    object RadioButtonSample : Destination("RadioButtonSample")
+    object RadioGroupSample : Destination("RadioGroupSample")
+
+    //Sheet Bottom
+    object BottomSheetScaffoldSample : Destination("BottomSheetScaffoldSample")
+    object ModalBottomSheetSample : Destination("ModalBottomSheetSample")
+    object SheetsBottom : Destination("SheetsBottom")
+
+
+
+
 
 
     object ScreenThird : Destination("ScreenThird")
