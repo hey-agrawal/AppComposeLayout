@@ -73,6 +73,8 @@ import com.example.appcompose.screens.snackbar.ScaffoldWithCoroutinesSnackbar
 import com.example.appcompose.screens.snackbar.ScaffoldWithCustomSnackBar
 import com.example.appcompose.screens.snackbar.ScaffoldWithSimpleSnackbar
 import com.example.appcompose.screens.snackbar.SnackBars
+import com.example.appcompose.screens.switches.SwitchSample
+import com.example.appcompose.screens.switches.Switches
 
 @Composable
 fun ComposeNavigation(){
@@ -192,6 +194,11 @@ fun ComposeNavigation(){
         composable(Destination.ScaffoldWithCoroutinesSnackbar.route){ ScaffoldWithCoroutinesSnackbar(navController)}
         composable(Destination.ScaffoldWithSimpleSnackbar.route){ ScaffoldWithSimpleSnackbar(navController)}
         composable(Destination.SnackBars.route){ SnackBars(navController )}
+
+
+        //Switches
+        composable(Destination.Switches.route){ Switches(navController )}
+        composable(Destination.SwitchSample.route){ SwitchSample(navController)}
 
 
         //old app normal navigation

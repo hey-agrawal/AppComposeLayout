@@ -119,6 +119,11 @@ sealed class Destination(val route: String) {
     object SnackBars : Destination("SnackBars")
 
 
+    //Switches
+    object Switches : Destination("Switches")
+    object SwitchSample : Destination("SwitchSample")
+
+
 
 
     object ScreenThird : Destination("ScreenThird")
