@@ -1,4 +1,5 @@
 package com.example.appcompose.screens.switches
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -53,25 +54,23 @@ import androidx.navigation.NavHostController
 
 @Composable
 fun SwitchSample(navController: NavHostController){
-    val checkedState = remember { mutableStateOf(true) }
-    Switch(
-        checked = checkedState.value,
-        onCheckedChange = { checkedState.value = it }
-    )
-
-    var pineappleOnPizza by remember { mutableStateOf(true) }
-
-    Row(
-        Modifier
-            .padding(16.dp)
-            .toggleable(
-                role = Role.Switch,
-                value = pineappleOnPizza,
-                onValueChange = { pineappleOnPizza = it },
-            )
-    ) {
-        Switch(checked = pineappleOnPizza, onCheckedChange = null)
-        Spacer(Modifier.width(8.dp))
-        Text("Pineapple on pizza?")
+    Column(  horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = Modifier
+            .fillMaxWidth()) {
+        val checkedState = remember { mutableStateOf(true) }
+        var pineappleOnPizza by remember { mutableStateOf(true) }
+        Row(
+            Modifier
+                .padding(16.dp)
+                .toggleable(
+                    role = Role.Switch,
+                    value = pineappleOnPizza,
+                    onValueChange = { pineappleOnPizza = it },
+                )
+        ) {
+            Switch(checked = pineappleOnPizza, onCheckedChange = null)
+            Spacer(Modifier.width(8.dp))
+            Text("Dark Mode")
+        }
     }
 }
