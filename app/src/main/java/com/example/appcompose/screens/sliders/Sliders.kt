@@ -16,6 +16,7 @@ import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.example.appcompose.cards.CardItem2
@@ -27,9 +28,9 @@ fun Sliders(navController: NavHostController){
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(text = "Sliders") }
+                title = { Text(text = "Sliders" ,color = Color.Black) }, backgroundColor = Color.White
             )
-        },
+        },  backgroundColor = Color.White,
         content = {
             Column(modifier = Modifier.padding(16.dp)) {
                 Column(
@@ -46,14 +47,14 @@ fun Sliders(navController: NavHostController){
                 }
                 Text(
                     text = "Description",
-                    style = MaterialTheme.typography.h5)
+                    style = MaterialTheme.typography.h5,color = Color.Black)
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(text = "Allow User to make Selection to make selection from range of value" ,
-                    style = MaterialTheme.typography.h6
+                    style = MaterialTheme.typography.h6,color = Color.Black
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(text = "Examples",
-                    style = MaterialTheme.typography.h6)
+                    style = MaterialTheme.typography.h6,color = Color.Black)
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "Slider",route = Destination.SliderSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))

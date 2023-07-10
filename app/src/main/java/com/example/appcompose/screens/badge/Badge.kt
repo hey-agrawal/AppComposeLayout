@@ -16,6 +16,7 @@ import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.example.appcompose.cards.CardItem2
@@ -27,9 +28,9 @@ fun Badge(navController: NavHostController) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(text = "Badge") }
+                title = { Text(text = "Badge", color = Color.Black) }, backgroundColor = Color.White
             )
-        },
+        }, backgroundColor = Color.White,
         content = {
             Column(modifier = Modifier.padding(16.dp)) {
                 Column(
@@ -49,14 +50,15 @@ fun Badge(navController: NavHostController) {
 
                 Text(
                     text = "Description",
-                    style = MaterialTheme.typography.h5)
+                    style = MaterialTheme.typography.h5,
+                    color = Color.Black)
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(text = "A badge Contain Dynamic Information,such as the presence of a new notification or a number of pending requests. badge can be icon only or contains a short text" ,
-                    style = MaterialTheme.typography.h6
+                    style = MaterialTheme.typography.h6,color = Color.Black
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(text = "Example",
-                    style = MaterialTheme.typography.h6)
+                    style = MaterialTheme.typography.h6,color = Color.Black)
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "Bottom Navigation Badge", route = Destination.BottomNavigationItemWithBadge.route, navController )
                 Spacer(modifier = Modifier.height(8.dp))

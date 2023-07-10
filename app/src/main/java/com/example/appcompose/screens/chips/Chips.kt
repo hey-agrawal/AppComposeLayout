@@ -16,6 +16,7 @@ import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.example.appcompose.cards.CardItem2
@@ -27,9 +28,9 @@ fun Chips(navController: NavHostController){
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(text = "Chips") }
+                title = { Text(text = "Chips", color = Color.Black) }, backgroundColor = Color.White
             )
-        },
+        },  backgroundColor = Color.White,
         content = {
             Column(modifier = Modifier.padding(16.dp)) {
                 Column(
@@ -46,14 +47,14 @@ fun Chips(navController: NavHostController){
                 }
                 Text(
                     text = "Description",
-                    style = MaterialTheme.typography.h5)
+                    style = MaterialTheme.typography.h5,color = Color.Black)
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(text = "Chips allow users to enter information make selection filter content or trigger actions" ,
                     style = MaterialTheme.typography.h6
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(text = "Examples",
-                    style = MaterialTheme.typography.h6)
+                    style = MaterialTheme.typography.h6,color = Color.Black)
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "Chips",route = Destination.ChipSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))

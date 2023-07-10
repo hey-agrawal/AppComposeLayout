@@ -64,7 +64,7 @@ fun AppBarBottom(navController:NavHostController) {
                         )
                 Spacer(modifier = Modifier.height(8.dp))
                     Text(text = "Example",
-                        style = MaterialTheme.typography.h6)
+                        style = MaterialTheme.typography.h6,color = Color.Black)
                 Spacer(modifier = Modifier.height(8.dp))
                     CardItem2(title = "Simple Bottom App Bar", route = Destination.SimpleBottomAppBar.route, navController )
                 Spacer(modifier = Modifier.height(8.dp))

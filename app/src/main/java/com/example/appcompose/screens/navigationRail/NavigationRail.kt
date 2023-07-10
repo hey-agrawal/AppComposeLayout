@@ -16,6 +16,7 @@ import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
@@ -28,9 +29,9 @@ fun NavigationRail(navController: NavHostController){
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(text = "Navigation Rail") }
+                title = { Text(text = "Navigation Rail", color = Color.Black) }, backgroundColor = Color.White
             )
-        },
+        },  backgroundColor = Color.White,
         content = {
             Column(modifier = Modifier.padding(16.dp)) {
                 Column(
@@ -47,14 +48,14 @@ fun NavigationRail(navController: NavHostController){
                 }
                 Text(
                     text = "Description",
-                    style = MaterialTheme.typography.h5)
+                    style = MaterialTheme.typography.h5,color = Color.Black)
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(text = "Navigation rails side navigation components allow movement between primary destinations in an app" ,
-                    style = MaterialTheme.typography.h6
+                    style = MaterialTheme.typography.h6,color = Color.Black
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(text = "Examples",
-                    style = MaterialTheme.typography.h6)
+                    style = MaterialTheme.typography.h6,color = Color.Black)
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = " Navigation Rail",route = Destination.NavigationRailSimple.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
