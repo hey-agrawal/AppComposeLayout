@@ -16,6 +16,7 @@ import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.example.appcompose.navigationApp.Destination
@@ -29,9 +30,11 @@ fun AppBarBottom(navController:NavHostController) {
 
         topBar = {
             TopAppBar(
-                title = { Text(text = "Bottom App Bar") }
+                title = { Text(text = "Bottom App Bar", color = Color.Black) },
+                backgroundColor = Color(0xFFFFFFFF)
             )
         },
+        backgroundColor = Color.White,
         content = {
             Column(modifier = Modifier.padding(16.dp)) {
                 Column(
@@ -51,10 +54,13 @@ fun AppBarBottom(navController:NavHostController) {
 
                     Text(
                         text = "Description",
-                        style = MaterialTheme.typography.h5)
+                        style = MaterialTheme.typography.h5,
+                    color = Color.Black
+                    )
                     Spacer(modifier = Modifier.height(8.dp))
                     Text(text = "A bottom app bar displays navigation and key actions at the bottom of the mobile screen ",
-                        style = MaterialTheme.typography.h6
+                        style = MaterialTheme.typography.h6,
+                        color = Color.Black
                         )
                 Spacer(modifier = Modifier.height(8.dp))
                     Text(text = "Example",

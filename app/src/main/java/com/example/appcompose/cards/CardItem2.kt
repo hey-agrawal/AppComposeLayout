@@ -1,7 +1,10 @@
 package com.example.appcompose.cards
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -15,6 +18,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
@@ -26,9 +30,16 @@ fun CardItem2(title: String,route: String, navController: NavController) {
             .fillMaxWidth()
             .height(60.dp)
             .clickable { navController.navigate(route) },
-        elevation = 8.dp
+        elevation = 25.dp
     ) {
-        Column(
+        Box(  modifier = Modifier
+            .background(color = Color(0xFF1A4CF7))
+            .fillMaxSize()
+            .border(
+                width = 1.dp,
+                color = Color.Gray,
+                shape = MaterialTheme.shapes.medium
+            )){ Column(
             modifier = Modifier
                 .padding(16.dp)
                 .fillMaxSize(),
@@ -36,7 +47,9 @@ fun CardItem2(title: String,route: String, navController: NavController) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(text = title, style = MaterialTheme.typography.h6, modifier = Modifier.padding(top = 8.dp))
-        }
+        }}
+
+
     }
 }
 
