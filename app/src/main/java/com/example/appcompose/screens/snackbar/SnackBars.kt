@@ -48,7 +48,7 @@ fun SnackBars(navController: NavHostController){
                     text = "Description",
                     style = MaterialTheme.typography.h5)
                 Spacer(modifier = Modifier.height(8.dp))
-                Text(text = "Snackbars provide brief message about app processes at the bottom of the screen " ,
+                Text(text = "Snack bars provide brief message about app processes at the bottom of the screen " ,
                     style = MaterialTheme.typography.h6
                 )
                 Spacer(modifier = Modifier.height(8.dp))
@@ -57,15 +57,15 @@ fun SnackBars(navController: NavHostController){
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "Simple SnackBar",route = Destination.ScaffoldWithSimpleSnackbar.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
-                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://github.com/hey-agrawal/BasicCode/blob/main/SimpleSnackbar.kt") )
                 Spacer(modifier = Modifier.height(8.dp))
-                CardItem2(title = "Custom Snackbar",route = Destination.ScaffoldWithCustomSnackbar.route,navController)
+                CardItem2(title = "Custom Snack bar",route = Destination.ScaffoldWithCustomSnackbar.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
-                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://github.com/hey-agrawal/BasicCode/blob/main/CustomSnakebar.kt") )
                 Spacer(modifier = Modifier.height(8.dp))
                 CardItem2(title = "Coroutine Snackbar",route = Destination.ScaffoldWithCoroutinesSnackbar.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
-                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://github.com/hey-agrawal/BasicCode/blob/main/CorountineSanckbar.kt") )
                 Spacer(modifier = Modifier.height(8.dp))
             }
         }
