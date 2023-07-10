@@ -54,13 +54,13 @@ fun BottomNavigation(navController: NavHostController){
                 Text(text = "Examples",
                     style = MaterialTheme.typography.h6)
                 Spacer(modifier = Modifier.height(8.dp))
-                CardItem2(title = "Bottom Navigation Sample",route = Destination.BottomNavigationSample.route,navController)
+                CardItem2(title = "Bottom Navigation",route = Destination.BottomNavigationSample.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
-                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://github.com/hey-agrawal/BasicCode/blob/main/BottomNavigation.kt") )
                 Spacer(modifier = Modifier.height(8.dp))
-                CardItem2(title = "BottomNavigationWithOnlySelectedLabelsSamples",route = Destination.BottomNavigationWithOnlySelectedLabelsSamples.route,navController)
+                CardItem2(title = "BottomNavigationWithOnlySelectedLabels",route = Destination.BottomNavigationWithOnlySelectedLabelsSamples.route,navController)
                 Spacer(modifier = Modifier.height(8.dp))
-                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://github.com/hey-agrawal/BasicCode/blob/main/BottomNavigationWithOnlySelectedLabels.kt") )
             }
         }
     )

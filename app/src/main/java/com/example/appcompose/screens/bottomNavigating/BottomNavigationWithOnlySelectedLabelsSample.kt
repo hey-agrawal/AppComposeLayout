@@ -12,6 +12,7 @@ import androidx.compose.material.Icon
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -20,7 +21,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
-import com.example.appcompose.hyperlink.HyperlinkText
 
 @Composable
 fun BottomNavigationWithOnlySelectedLabelsSamples(navHostController: NavHostController){
@@ -29,11 +29,11 @@ fun BottomNavigationWithOnlySelectedLabelsSamples(navHostController: NavHostCont
         modifier = Modifier
             .fillMaxSize()) {
         var selectedItem by remember { mutableStateOf(0) }
-        val items = listOf("Songs", "Artists", "Playlists")
+        val items = listOf("Menu 1", "Menu 2", "Menu 3")
         BottomNavigation {
             items.forEachIndexed { index, item ->
                 BottomNavigationItem(
-                    icon = { Icon(Icons.Filled.Favorite, contentDescription = null) },
+                    icon = { Icon(Icons.Filled.Menu, contentDescription = null) },
                     label = { Text(item) },
                     selected = selectedItem == index,
                     onClick = { selectedItem = index },
@@ -41,7 +41,5 @@ fun BottomNavigationWithOnlySelectedLabelsSamples(navHostController: NavHostCont
                 )
             }
         }
-
     }
-
 }

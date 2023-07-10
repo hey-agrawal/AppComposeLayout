@@ -58,9 +58,9 @@ fun Badge(navController: NavHostController) {
                 Text(text = "Example",
                     style = MaterialTheme.typography.h6)
                 Spacer(modifier = Modifier.height(8.dp))
-                CardItem2(title = "Back Drop Scaffold Sample ", route = Destination.BottomNavigationItemWithBadge.route, navController )
+                CardItem2(title = "Bottom Navigation Badge", route = Destination.BottomNavigationItemWithBadge.route, navController )
                 Spacer(modifier = Modifier.height(8.dp))
-                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://www.google.co.in/") )
+                HyperlinkText(fullText = "SourceCode", linkText = listOf("SourceCode") , hyperlinks = listOf("https://github.com/hey-agrawal/BasicCode/blob/main/BottomNavigationBadge.kt") )
             }
 
         }

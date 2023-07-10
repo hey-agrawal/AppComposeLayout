@@ -5,16 +5,15 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
-
 import androidx.compose.material.Icon
 import androidx.compose.material.NavigationRail
 import androidx.compose.material.NavigationRailItem
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Settings
-
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -29,8 +28,8 @@ fun NavigationRailSample(navController: NavHostController){
         modifier = Modifier
             .fillMaxSize()) {
         var selectedItem by remember { mutableStateOf(0) }
-        val items = listOf("Home", "Search", "Settings")
-        val icons = listOf(Icons.Filled.Home, Icons.Filled.Search, Icons.Filled.Settings)
+        val items = listOf(",enu", "Search", "Settings")
+        val icons = listOf(Icons.Filled.Menu, Icons.Filled.Search, Icons.Filled.Settings)
         NavigationRail {
             items.forEachIndexed { index, item ->
                 NavigationRailItem(
@@ -42,5 +41,4 @@ fun NavigationRailSample(navController: NavHostController){
             }
         }
     }
-
 }

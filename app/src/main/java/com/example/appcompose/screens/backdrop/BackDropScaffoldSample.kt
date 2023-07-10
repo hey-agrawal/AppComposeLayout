@@ -46,11 +46,11 @@ fun BackDropScaffoldSample(navController: NavHostController){
                 navigationIcon = {
                     if (scaffoldState.isConcealed) {
                         IconButton(onClick = { scope.launch { scaffoldState.reveal() } }) {
-                            Icon(Icons.Default.Menu, contentDescription = "Localized description")
+                            Icon(Icons.Default.Menu, contentDescription = "")
                         }
                     } else {
                         IconButton(onClick = { scope.launch { scaffoldState.conceal() } }) {
-                            Icon(Icons.Default.Close, contentDescription = "Localized description")
+                            Icon(Icons.Default.Close, contentDescription = "")
                         }
                     }
                 },
@@ -65,7 +65,7 @@ fun BackDropScaffoldSample(navController: NavHostController){
                             }
                         }
                     ) {
-                        Icon(Icons.Default.Favorite, contentDescription = "Localized description")
+                        Icon(Icons.Default.Favorite, contentDescription = "")
                     }
                 },
                 elevation = 0.dp,
@@ -94,7 +94,7 @@ fun BackDropScaffoldSample(navController: NavHostController){
                         icon = {
                             Icon(
                                 Icons.Default.Favorite,
-                                contentDescription = "Localized description"
+                                contentDescription = ""
                             )
                         }
                     )
