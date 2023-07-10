@@ -21,6 +21,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 @Composable
@@ -28,7 +29,7 @@ fun CardItem2(title: String,route: String, navController: NavController) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .height(60.dp)
+            .height(80.dp)
             .clickable { navController.navigate(route) },
         elevation = 25.dp
     ) {
@@ -46,7 +47,7 @@ fun CardItem2(title: String,route: String, navController: NavController) {
             verticalArrangement =  Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text(text = title, style = MaterialTheme.typography.h6, modifier = Modifier.padding(top = 8.dp))
+            Text(text = title, style = MaterialTheme.typography.h6, fontSize = 20.sp, color = Color.White)
         }}
 
 
