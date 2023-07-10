@@ -11,6 +11,7 @@ import androidx.compose.material.Icon
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -25,12 +26,12 @@ fun ButtonWithIconSample(navController: NavHostController){
             .fillMaxSize()) {
         Button(onClick = { /* Do something! */ }) {
             Icon(
-                Icons.Filled.Favorite,
+                Icons.Filled.Menu,
                 contentDescription = null,
                 modifier = Modifier.size(ButtonDefaults.IconSize)
             )
             Spacer(Modifier.size(ButtonDefaults.IconSpacing))
-            Text("Like")
+            Text("Menu")
         }
     }
 }

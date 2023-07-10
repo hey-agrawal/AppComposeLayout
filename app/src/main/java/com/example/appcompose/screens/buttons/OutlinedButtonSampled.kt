@@ -17,8 +17,7 @@ fun OutlinedButtonSample(navController: NavHostController){
         verticalArrangement = Arrangement.Center,
         modifier = Modifier
             .fillMaxSize()) {
-
-        OutlinedButton(onClick = { /* Do something! */ }) {
+        OutlinedButton(onClick = { /* Action */ }) {
             Text("Outlined Button")
         }
     }

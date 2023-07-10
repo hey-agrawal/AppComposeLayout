@@ -17,7 +17,7 @@ fun TextButtonsSample(navController: NavHostController){
         verticalArrangement = Arrangement.Center,
         modifier = Modifier
             .fillMaxSize()) {
-        TextButton(onClick = { /* Do something! */ }) {
+        TextButton(onClick = { /* Action */ }) {
             Text("Text Button")
         }
     }

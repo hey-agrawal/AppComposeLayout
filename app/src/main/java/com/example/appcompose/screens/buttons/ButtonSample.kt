@@ -17,9 +17,8 @@ fun ButtonSample(navController: NavHostController){
         verticalArrangement = Arrangement.Center,
         modifier = Modifier
             .fillMaxSize()) {
-        Button(onClick = { /* Do something! */ }) {
+        Button(onClick = { /*Action */ }) {
             Text("Button")
         }
     }
-
 }
