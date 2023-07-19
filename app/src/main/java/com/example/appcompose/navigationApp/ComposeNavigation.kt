@@ -5,9 +5,6 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.appcompose.Screen3
-import com.example.appcompose.Screen4
-import com.example.appcompose.Screen5
 import com.example.appcompose.screens.appBar.AppBarBottom
 import com.example.appcompose.screens.appBar.SimpleBottomAppBar
 import com.example.appcompose.screens.HomeScreen
@@ -249,12 +246,6 @@ fun ComposeNavigation(){
         composable(Destination.TextFieldWithIcon.route){ TextFieldWithIcons(navController)}
         composable(Destination.TextFieldWithPlaceHolder.route){ TextFieldWithPlaceHolder(navController)}
 
-
-
-        //old app normal navigation
-        composable(Destination.ScreenThird.route) { Screen3(navController) }
-        composable(Destination.ScreenFourth.route) { Screen4(navController) }
-        composable(Destination.ScreenFive.route) { Screen5(navController) }
 
     }
 }

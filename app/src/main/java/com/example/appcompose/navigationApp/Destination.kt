@@ -155,12 +155,4 @@ sealed class Destination(val route: String) {
 
 
 
-
-
-
-    object ScreenThird : Destination("ScreenThird")
-    object ScreenFourth : Destination("ScreenFourth")
-    object ScreenFive : Destination("ScreenFive")
-
-
 }
