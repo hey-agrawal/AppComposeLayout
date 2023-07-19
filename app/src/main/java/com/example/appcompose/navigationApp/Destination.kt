@@ -3,7 +3,7 @@ package com.example.appcompose.navigationApp
 sealed class Destination(val route: String) {
 
    //HomeScreen
-    object Material2 : Destination("Material2")
+    object HomeScreen : Destination("HomeScreen")
 
     //Appbars
     object AppBarBottom : Destination("AppBarBottom")
@@ -153,8 +153,7 @@ sealed class Destination(val route: String) {
 
 
  // Material navigation
- object HomeScreen : Destination("HomeScreen")
- object Material3 : Destination("Material3")
+ object MaterialScreen : Destination("MaterialScreen")
 
 
 
