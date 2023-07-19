@@ -5,10 +5,12 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.appcompose.Screen3
+import com.example.appcompose.Screen4
+import com.example.appcompose.Screen5
 import com.example.appcompose.screens.appBar.AppBarBottom
 import com.example.appcompose.screens.appBar.SimpleBottomAppBar
 import com.example.appcompose.screens.HomeScreen
-import com.example.appcompose.screens.MaterialScreen
 import com.example.appcompose.screens.appBar.AppBarTop
 import com.example.appcompose.screens.appBar.SimpleTopAppBar
 import com.example.appcompose.screens.backdrop.BackDrop
@@ -99,7 +101,7 @@ import com.example.appcompose.screens.textFields.TextFields
 @Composable
 fun ComposeNavigation(){
     val navController = rememberNavController()
-    NavHost(navController = navController, startDestination = Destination.MaterialScreen.route) {
+    NavHost(navController = navController, startDestination = Destination.HomeScreen.route) {
         //Home-screen
         composable(Destination.HomeScreen.route) { HomeScreen(navController) }
 
@@ -248,8 +250,11 @@ fun ComposeNavigation(){
         composable(Destination.TextFieldWithPlaceHolder.route){ TextFieldWithPlaceHolder(navController)}
 
 
-        // material Navigation
-        composable(Destination.MaterialScreen.route){ MaterialScreen(navController)}
+
+        //old app normal navigation
+        composable(Destination.ScreenThird.route) { Screen3(navController) }
+        composable(Destination.ScreenFourth.route) { Screen4(navController) }
+        composable(Destination.ScreenFive.route) { Screen5(navController) }
 
     }
 }

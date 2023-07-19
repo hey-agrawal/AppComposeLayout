@@ -152,11 +152,6 @@ sealed class Destination(val route: String) {
 
 
 
- // Material navigation
- object MaterialScreen : Destination("MaterialScreen")
-
-
-
 
 
 
