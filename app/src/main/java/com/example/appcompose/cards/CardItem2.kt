@@ -48,9 +48,7 @@ fun CardItem2(title: String,route: String, navController: NavController) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(text = title, style = MaterialTheme.typography.h6, fontSize = 20.sp, color = Color.White)
-        }}
-
-
+        }
+        }
     }
 }
-
