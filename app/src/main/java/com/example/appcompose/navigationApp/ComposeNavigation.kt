@@ -1,107 +1,107 @@
 package com.example.appcompose.navigationApp
 
-import android.provider.MediaStore.Audio.Radio
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.appcompose.screens.appBar.AppBarBottom
-import com.example.appcompose.screens.appBar.SimpleBottomAppBar
-import com.example.appcompose.screens.HomeScreen
-import com.example.appcompose.screens.MaterialScreen
-import com.example.appcompose.screens.appBar.AppBarTop
-import com.example.appcompose.screens.appBar.SimpleTopAppBar
-import com.example.appcompose.screens.backdrop.BackDrop
-import com.example.appcompose.screens.backdrop.BackDropScaffoldSample
-import com.example.appcompose.screens.badge.Badge
-import com.example.appcompose.screens.badge.BottomNavigationItemWithBadge
-import com.example.appcompose.screens.bottomNavigating.BottomNavigation
-import com.example.appcompose.screens.bottomNavigating.BottomNavigationSample
-import com.example.appcompose.screens.bottomNavigating.BottomNavigationWithOnlySelectedLabelsSamples
-import com.example.appcompose.screens.buttons.ButtonSample
-import com.example.appcompose.screens.buttons.ButtonWithIconSample
-import com.example.appcompose.screens.buttons.Buttons
-import com.example.appcompose.screens.buttons.OutlinedButtonSample
-import com.example.appcompose.screens.buttons.TextButtonsSample
-import com.example.appcompose.screens.cards.CardSample
-import com.example.appcompose.screens.cards.Cards
-import com.example.appcompose.screens.cards.ClickableCardSample
-import com.example.appcompose.screens.checkBoxes.CheckBoxes
-import com.example.appcompose.screens.checkBoxes.CheckBoxesSample
-import com.example.appcompose.screens.checkBoxes.TriStateCheckBoxSample
-import com.example.appcompose.screens.chips.ChipGroupReflowSample
-import com.example.appcompose.screens.chips.Chips
-import com.example.appcompose.screens.chips.ChipsGroupSingleLineSample
-import com.example.appcompose.screens.chips.ChipsSample
-import com.example.appcompose.screens.chips.OutlinedChipWithIconSample
-import com.example.appcompose.screens.dialogs.AlertDialogSample
-import com.example.appcompose.screens.dialogs.CustomAlertDialogSample
-import com.example.appcompose.screens.dialogs.Dialogs
-import com.example.appcompose.screens.floatingActionsButtons.FloatingActionButtons
-import com.example.appcompose.screens.floatingActionsButtons.FluidExtendedFab
-import com.example.appcompose.screens.floatingActionsButtons.SimpleExtendedFabNoIcon
-import com.example.appcompose.screens.floatingActionsButtons.SimpleExtendedFabWithIcon
-import com.example.appcompose.screens.floatingActionsButtons.SimpleFab
-import com.example.appcompose.screens.menus.ExposedDropDownMenuSample
-import com.example.appcompose.screens.menus.MenuSample
-import com.example.appcompose.screens.menus.MenuWithScrollStateSample
-import com.example.appcompose.screens.menus.Menus
-import com.example.appcompose.screens.navigationDrawer.BottomDrawerSample
-import com.example.appcompose.screens.navigationDrawer.ModalDrawerSample
-import com.example.appcompose.screens.navigationDrawer.NavigationDrawer
-import com.example.appcompose.screens.navigationRail.CompactNavigationRailSimple
-import com.example.appcompose.screens.navigationRail.NavigationRail
-import com.example.appcompose.screens.navigationRail.NavigationRailBottomAlignSimple
-import com.example.appcompose.screens.navigationRail.NavigationRailSample
-import com.example.appcompose.screens.navigationRail.NavigationRailWithOnlySelectedLabels
-import com.example.appcompose.screens.progressIndicators.CircularProgressIndicators
-import com.example.appcompose.screens.progressIndicators.LinearProgressIndicators
-import com.example.appcompose.screens.progressIndicators.ProgressIndicators
-import com.example.appcompose.screens.radioButtons.RadioButtons
-import com.example.appcompose.screens.radioButtons.RadioButtonsSample
-import com.example.appcompose.screens.radioButtons.RadioGroupSample
-import com.example.appcompose.screens.sheetsBottom.BottomSheetScaffoldSample
-import com.example.appcompose.screens.sheetsBottom.ModalBottomSheetSample
-import com.example.appcompose.screens.sheetsBottom.SheetsBottom
-import com.example.appcompose.screens.sliders.RangeSliderSample
-import com.example.appcompose.screens.sliders.SliderSample
-import com.example.appcompose.screens.sliders.Sliders
-import com.example.appcompose.screens.sliders.StepRangeSliderSample
-import com.example.appcompose.screens.snackbar.ScaffoldWithCoroutinesSnackbar
-import com.example.appcompose.screens.snackbar.ScaffoldWithCustomSnackBar
-import com.example.appcompose.screens.snackbar.ScaffoldWithSimpleSnackbar
-import com.example.appcompose.screens.snackbar.SnackBars
-import com.example.appcompose.screens.switches.SwitchSample
-import com.example.appcompose.screens.switches.Switches
-import com.example.appcompose.screens.tabs.FancyIndicatorsContainerTabs
-import com.example.appcompose.screens.tabs.FancyIndicatorsTabs
-import com.example.appcompose.screens.tabs.FancyTabs
-import com.example.appcompose.screens.tabs.IconTabs
-import com.example.appcompose.screens.tabs.LeadingIconTabs
-import com.example.appcompose.screens.tabs.ScrollingFancyIndicatorsContainerTabs
-import com.example.appcompose.screens.tabs.ScrollingTextTabs
-import com.example.appcompose.screens.tabs.Tabs
-import com.example.appcompose.screens.tabs.TextAndIconTab
-import com.example.appcompose.screens.tabs.TextTabs
-import com.example.appcompose.screens.textFields.OutlinedTextFieldSample
-import com.example.appcompose.screens.textFields.PasswordTextField
-import com.example.appcompose.screens.textFields.SimpleOutlinedTextFieldSample
-import com.example.appcompose.screens.textFields.SimpleTextFieldSample
-import com.example.appcompose.screens.textFields.TextArea
-import com.example.appcompose.screens.textFields.TextFieldSample
-import com.example.appcompose.screens.textFields.TextFieldWithErrorState
-import com.example.appcompose.screens.textFields.TextFieldWithHelperMessage
-import com.example.appcompose.screens.textFields.TextFieldWithHideKeyboardOnImeAction
-import com.example.appcompose.screens.textFields.TextFieldWithIcons
-import com.example.appcompose.screens.textFields.TextFieldWithPlaceHolder
-import com.example.appcompose.screens.textFields.TextFields
+import com.example.appcompose.screens2.appBar.AppBarBottom
+import com.example.appcompose.screens2.appBar.SimpleBottomAppBar
+import com.example.appcompose.HomeScreen
+import com.example.appcompose.screens2.appBar.AppBarTop
+import com.example.appcompose.screens2.appBar.SimpleTopAppBar
+import com.example.appcompose.screens2.backdrop.BackDrop
+import com.example.appcompose.screens2.backdrop.BackDropScaffoldSample
+import com.example.appcompose.screens2.badge.Badge
+import com.example.appcompose.screens2.badge.BottomNavigationItemWithBadge
+import com.example.appcompose.screens2.bottomNavigating.BottomNavigation
+import com.example.appcompose.screens2.bottomNavigating.BottomNavigationSample
+import com.example.appcompose.screens2.bottomNavigating.BottomNavigationWithOnlySelectedLabelsSamples
+import com.example.appcompose.screens2.buttons.ButtonSample
+import com.example.appcompose.screens2.buttons.ButtonWithIconSample
+import com.example.appcompose.screens2.buttons.Buttons
+import com.example.appcompose.screens2.buttons.OutlinedButtonSample
+import com.example.appcompose.screens2.buttons.TextButtonsSample
+import com.example.appcompose.screens2.cards.CardSample
+import com.example.appcompose.screens2.cards.Cards
+import com.example.appcompose.screens2.cards.ClickableCardSample
+import com.example.appcompose.screens2.checkBoxes.CheckBoxes
+import com.example.appcompose.screens2.checkBoxes.CheckBoxesSample
+import com.example.appcompose.screens2.checkBoxes.TriStateCheckBoxSample
+import com.example.appcompose.screens2.chips.ChipGroupReflowSample
+import com.example.appcompose.screens2.chips.Chips
+import com.example.appcompose.screens2.chips.ChipsGroupSingleLineSample
+import com.example.appcompose.screens2.chips.ChipsSample
+import com.example.appcompose.screens2.chips.OutlinedChipWithIconSample
+import com.example.appcompose.screens2.dialogs.AlertDialogSample
+import com.example.appcompose.screens2.dialogs.CustomAlertDialogSample
+import com.example.appcompose.screens2.dialogs.Dialogs
+import com.example.appcompose.screens2.floatingActionsButtons.FloatingActionButtons
+import com.example.appcompose.screens2.floatingActionsButtons.FluidExtendedFab
+import com.example.appcompose.screens2.floatingActionsButtons.SimpleExtendedFabNoIcon
+import com.example.appcompose.screens2.floatingActionsButtons.SimpleExtendedFabWithIcon
+import com.example.appcompose.screens2.floatingActionsButtons.SimpleFab
+import com.example.appcompose.screens2.material.Material2
+import com.example.appcompose.screens2.material.Material3
+import com.example.appcompose.screens2.menus.ExposedDropDownMenuSample
+import com.example.appcompose.screens2.menus.MenuSample
+import com.example.appcompose.screens2.menus.MenuWithScrollStateSample
+import com.example.appcompose.screens2.menus.Menus
+import com.example.appcompose.screens2.navigationDrawer.BottomDrawerSample
+import com.example.appcompose.screens2.navigationDrawer.ModalDrawerSample
+import com.example.appcompose.screens2.navigationDrawer.NavigationDrawer
+import com.example.appcompose.screens2.navigationRail.CompactNavigationRailSimple
+import com.example.appcompose.screens2.navigationRail.NavigationRail
+import com.example.appcompose.screens2.navigationRail.NavigationRailBottomAlignSimple
+import com.example.appcompose.screens2.navigationRail.NavigationRailSample
+import com.example.appcompose.screens2.navigationRail.NavigationRailWithOnlySelectedLabels
+import com.example.appcompose.screens2.progressIndicators.CircularProgressIndicators
+import com.example.appcompose.screens2.progressIndicators.LinearProgressIndicators
+import com.example.appcompose.screens2.progressIndicators.ProgressIndicators
+import com.example.appcompose.screens2.radioButtons.RadioButtons
+import com.example.appcompose.screens2.radioButtons.RadioButtonsSample
+import com.example.appcompose.screens2.radioButtons.RadioGroupSample
+import com.example.appcompose.screens2.sheetsBottom.BottomSheetScaffoldSample
+import com.example.appcompose.screens2.sheetsBottom.ModalBottomSheetSample
+import com.example.appcompose.screens2.sheetsBottom.SheetsBottom
+import com.example.appcompose.screens2.sliders.RangeSliderSample
+import com.example.appcompose.screens2.sliders.SliderSample
+import com.example.appcompose.screens2.sliders.Sliders
+import com.example.appcompose.screens2.sliders.StepRangeSliderSample
+import com.example.appcompose.screens2.snackbar.ScaffoldWithCoroutinesSnackbar
+import com.example.appcompose.screens2.snackbar.ScaffoldWithCustomSnackBar
+import com.example.appcompose.screens2.snackbar.ScaffoldWithSimpleSnackbar
+import com.example.appcompose.screens2.snackbar.SnackBars
+import com.example.appcompose.screens2.switches.SwitchSample
+import com.example.appcompose.screens2.switches.Switches
+import com.example.appcompose.screens2.tabs.FancyIndicatorsContainerTabs
+import com.example.appcompose.screens2.tabs.FancyIndicatorsTabs
+import com.example.appcompose.screens2.tabs.FancyTabs
+import com.example.appcompose.screens2.tabs.IconTabs
+import com.example.appcompose.screens2.tabs.LeadingIconTabs
+import com.example.appcompose.screens2.tabs.ScrollingFancyIndicatorsContainerTabs
+import com.example.appcompose.screens2.tabs.ScrollingTextTabs
+import com.example.appcompose.screens2.tabs.Tabs
+import com.example.appcompose.screens2.tabs.TextAndIconTab
+import com.example.appcompose.screens2.tabs.TextTabs
+import com.example.appcompose.screens2.textFields.OutlinedTextFieldSample
+import com.example.appcompose.screens2.textFields.PasswordTextField
+import com.example.appcompose.screens2.textFields.SimpleOutlinedTextFieldSample
+import com.example.appcompose.screens2.textFields.SimpleTextFieldSample
+import com.example.appcompose.screens2.textFields.TextArea
+import com.example.appcompose.screens2.textFields.TextFieldSample
+import com.example.appcompose.screens2.textFields.TextFieldWithErrorState
+import com.example.appcompose.screens2.textFields.TextFieldWithHelperMessage
+import com.example.appcompose.screens2.textFields.TextFieldWithHideKeyboardOnImeAction
+import com.example.appcompose.screens2.textFields.TextFieldWithIcons
+import com.example.appcompose.screens2.textFields.TextFieldWithPlaceHolder
+import com.example.appcompose.screens2.textFields.TextFields
 
 @Composable
 fun ComposeNavigation(){
     val navController = rememberNavController()
-    NavHost(navController = navController, startDestination = Destination.MaterialScreen.route) {
+    NavHost(navController = navController, startDestination = Destination.HomeScreen.route) {
         //Home-screen
-        composable(Destination.HomeScreen.route) { HomeScreen(navController) }
+        composable(Destination.Material2.route) { Material2(navController) }
 
         //AppBars
         composable(Destination.AppBarBottom.route) { AppBarBottom(navController) }
@@ -249,7 +249,8 @@ fun ComposeNavigation(){
 
 
         // material Navigation
-        composable(Destination.MaterialScreen.route){ MaterialScreen(navController)}
+        composable(Destination.HomeScreen.route){ HomeScreen(navController) }
+        composable(Destination.Material3.route){ Material3(navController )}
 
     }
 }

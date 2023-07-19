@@ -1,0 +1,31 @@
+package com.example.appcompose.screens2.sliders
+
+import androidx.compose.foundation.layout.Column
+
+import androidx.compose.material.RangeSlider
+import androidx.compose.material.Text
+
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.material.ExperimentalMaterialApi
+import androidx.compose.runtime.Composable
+import androidx.navigation.NavHostController
+
+@OptIn(ExperimentalMaterialApi::class)
+@Composable
+fun RangeSliderSample(navController: NavHostController){
+    Column() {
+        var sliderPosition by remember { mutableStateOf(0f..100f) }
+        Text(text = sliderPosition.toString())
+        RangeSlider(
+            values = sliderPosition,
+            onValueChange = { newValue-> sliderPosition = newValue },
+            valueRange = 0f..100f,
+            onValueChangeFinished = {
+
+            },
+        )
+    }
+}
