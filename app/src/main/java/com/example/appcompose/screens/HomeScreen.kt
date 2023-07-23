@@ -46,9 +46,9 @@ fun HomeScreen(navController: NavHostController) {
                 ) {
                     CardItem("App Bar Bottom",icon={Image(painter=painterResource(R.mipmap.bottom_app_bar),contentDescription = "hello",modifier = Modifier.size(55.dp)) },Destination.AppBarBottom.route,navController)
                     Spacer(modifier = Modifier.height(16.dp))
-                    CardItem("App Bar top",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) }, Destination.AppBarTop.route,navController)
+                    CardItem("App Bar top",icon={Image(painter=painterResource(R.mipmap.top_app_bar),contentDescription = "hello",modifier = Modifier.size(55.dp)) }, Destination.AppBarTop.route,navController)
                     Spacer(modifier = Modifier.height(16.dp))
-                    CardItem("BackDrop",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) }, Destination.BackDrop.route,navController)
+                    CardItem("BackDrop",icon={Image(painter=painterResource(R.mipmap.back_drop),contentDescription = "hello",modifier = Modifier.size(55.dp)) }, Destination.BackDrop.route,navController)
                     Spacer(modifier = Modifier.height(16.dp))
                     CardItem("Badge",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) }, Destination.Badge.route,navController)
                     Spacer(modifier = Modifier.height(16.dp))
