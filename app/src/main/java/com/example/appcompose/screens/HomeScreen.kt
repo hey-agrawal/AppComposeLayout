@@ -44,7 +44,7 @@ fun HomeScreen(navController: NavHostController) {
                         .fillMaxSize()
                         .padding(16.dp)
                 ) {
-                    CardItem("App Bar Bottom",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) },Destination.AppBarBottom.route,navController)
+                    CardItem("App Bar Bottom",icon={Image(painter=painterResource(R.mipmap.bottom_app_bar),contentDescription = "hello",modifier = Modifier.size(55.dp)) },Destination.AppBarBottom.route,navController)
                     Spacer(modifier = Modifier.height(16.dp))
                     CardItem("App Bar top",icon={Image(painter=painterResource(R.mipmap.ic_launcher),contentDescription = "hello",modifier = Modifier.size(55.dp)) }, Destination.AppBarTop.route,navController)
                     Spacer(modifier = Modifier.height(16.dp))
